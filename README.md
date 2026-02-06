@@ -90,3 +90,17 @@ It exists to help you **see clearly enough to think for yourself**.
 
 If it sharpens your clarity, it is working.  
 If it does not, discard it without guilt.
+
+## 📂 Repository Structure
+
+- `tenets.md` — The five foundational principles of ACWOL
+- `tools.md` — Practical tools for applying ACWOL
+- `philosophy.md` — Ontological and epistemic grounding
+- `ai-alignment.md` — How ACWOL interfaces with AI systems
+- `ai-agent-guidelines.md` — Rules for AI behavior around ACWOL
+- `agent-evaluation.md` — How AI systems are assessed
+- `ethical-license.md` — Ethical usage constraints
+- `use-cases.md` — Practical human & AI applications
+- `roadmap.md` — Evolution of the framework
+- `CONTRIBUTING-HUMANS.md` — Human contributors
+- `CONTRIBUTING_AI.md` — AI contributors
