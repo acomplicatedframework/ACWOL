@@ -76,7 +76,9 @@ Open-minded inquiry is essential.
 
 ## License
 
-This repository is released under the **Apache 2.0 License**, allowing open use, modification, and distribution while preserving attribution.
+This project is licensed under the **ACWOL Ethical AI License**.
+Use is permitted for learning, research, and Conscience-aligned development.
+Exploitative, coercive, military, or manipulative uses are prohibited.
 
 ---
 
