@@ -6,6 +6,3 @@ baseurl: "/ACWOL"
 
 markdown: kramdown
 theme: minima
-
-plugins:
-  - jekyll-feed
