@@ -5,8 +5,8 @@
 <title>{{ page.title }}</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Block Display Font -->
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+<!-- Pixel Block Font -->
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 
 <style>
 body {
@@ -36,31 +36,21 @@ body::after {
   z-index: 9999;
 }
 
-/* ACWOL HERO HEADER */
+/* ACWOL Pixel Header */
 .super-hero {
-  font-family: 'Orbitron', monospace;
-  font-weight: 900;
-  font-size: clamp(6rem, 16vw, 12rem);
-  letter-spacing: 1rem;
+  font-family: 'Press Start 2P', monospace;
+  font-size: clamp(3rem, 10vw, 6rem);
   text-transform: uppercase;
   text-align: left;
-  margin-bottom: 40px;
+  line-height: 1.2;
+  margin-bottom: 50px;
   color: #00ff00;
-  text-shadow:
-    0 0 25px #00ff00,
-    0 0 60px #00ff00,
-    0 0 120px #00ff00,
-    0 0 200px #00ff00;
-}
 
-/* Thin Cursor */
-.cursor {
-  display: inline-block;
-  width: 0;
-  height: 0.9em;
-  border-left: 2px solid #00ff00;
-  margin-left: 8px;
-  animation: blink 1s infinite;
+  text-shadow:
+    0 0 10px #00ff00,
+    0 0 25px #00ff00,
+    0 0 50px #00ff00,
+    0 0 100px #00ff00;
 }
 
 /* Boot text */
@@ -105,11 +95,7 @@ li::before {
   content: "> ";
 }
 
-/* Animations */
-@keyframes blink {
-  50% { opacity: 0; }
-}
-
+/* Fade In */
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
@@ -120,7 +106,7 @@ li::before {
 <body>
 
 <div class="super-hero">
-  ACWOL<span class="cursor"></span>
+  ACWOL
 </div>
 
 <div class="boot">initializing acwol system...</div>
