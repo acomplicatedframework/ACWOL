@@ -1,8 +1,6 @@
 ---
 ---
 
-@import "{{ site.theme }}";
-
 /* ============================================
    HARD RESET
 ============================================ */
@@ -10,6 +8,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   box-shadow: none !important;
   border-radius: 0 !important;
 }
@@ -27,11 +26,23 @@ html, body {
   overflow-x: hidden;
 }
 
-/* Remove all white theme areas */
+/* Center content like a terminal window */
+
+body {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 20px;
+}
+
+/* ============================================
+   REMOVE GITHUB THEME STRUCTURE
+============================================ */
 
 header,
 .site-header,
 .site-nav,
+.nav-trigger,
+.menu-icon,
 .wrapper,
 .page-content,
 .post,
@@ -62,8 +73,8 @@ body::before {
   pointer-events: none;
   background: repeating-linear-gradient(
     to bottom,
-    rgba(0,255,0,0.04) 0px,
-    rgba(0,255,0,0.04) 1px,
+    rgba(0,255,0,0.05) 0px,
+    rgba(0,255,0,0.05) 1px,
     transparent 2px,
     transparent 4px
   );
@@ -74,7 +85,9 @@ body::before {
    TEXT GLOW
 ============================================ */
 
-body, h1, h2, h3, h4, h5, h6, p, li, a {
+body,
+h1, h2, h3, h4, h5, h6,
+p, li, a {
   text-shadow: 0 0 6px #00ff00;
 }
 
@@ -82,16 +95,16 @@ body, h1, h2, h3, h4, h5, h6, p, li, a {
    HEADINGS
 ============================================ */
 
-h1::before,
-h2::before,
-h3::before {
-  content: "> ";
-}
-
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   margin-top: 40px;
   margin-bottom: 20px;
+}
+
+h1::before,
+h2::before,
+h3::before {
+  content: "> ";
 }
 
 /* ============================================
@@ -113,7 +126,6 @@ a:hover {
 
 ul {
   list-style: none;
-  margin-left: 0;
   padding-left: 0;
 }
 
@@ -126,17 +138,15 @@ li::before {
 }
 
 /* ============================================
-   CONTENT WIDTH
+   PARAGRAPHS
 ============================================ */
 
-body {
-  max-width: 900px;
-  margin: 60px auto;
-  padding: 20px;
+p {
+  margin-bottom: 20px;
 }
 
 /* ============================================
-   OPTIONAL FLICKER
+   OPTIONAL TERMINAL FLICKER
 ============================================ */
 
 @keyframes flicker {
