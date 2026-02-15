@@ -1,11 +1,10 @@
 title: ACWOL
 description: Conscience-led systems and Intellect mining framework
 theme: minima
+
 markdown: kramdown
 permalink: pretty
 
 sass:
+  sass_dir: assets
   style: compressed
-
-minima:
-  skin: dark
