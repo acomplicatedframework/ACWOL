@@ -1,4 +1,5 @@
 ---
+layout: default
 title: A Complicated Way of Life (ACWOL)
 ---
 
@@ -12,9 +13,9 @@ Core framework for conscience-led decision-making, Intellect mining, and humanâ€
 - [AI Agent Guidelines](ai-agent-guidelines.md)
 - [Agent Evaluation](agent-evaluation.md)
 - [Ethical License](ethical-license.md)
-- [Contributing (Humans)](CONTRIBUTING%20-%20HUMANS.md)
+- [Contributing (Humans)](CONTRIBUTING - HUMANS.md)
 - [Contributing (AI)](CONTRIBUTING_AI.md)
 
 ## Mission
 
-To embed Conscience into AI and institutionalize the disciplined pursuit of maximum Intellect.
+To deploy Conscience mechanisms into AI and embed the disciplined pursuit of maximum Intellect into enduring systems.
