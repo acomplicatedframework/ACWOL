@@ -4,10 +4,10 @@
 @import "{{ site.theme }}";
 
 /* ============================================
-   ACWOL TERMINAL MODE – FULL SYSTEM OVERRIDE
+   ACWOL TERMINAL SYSTEM – NO HAMBURGER
 ============================================ */
 
-/* GLOBAL RESET */
+/* GLOBAL TERMINAL RESET */
 
 html, body {
   background: #000000 !important;
@@ -16,9 +16,10 @@ html, body {
   line-height: 1.7;
   text-transform: lowercase;
   overflow-x: hidden;
+  animation: flicker 0.15s infinite;
 }
 
-/* Remove all modern UI styling */
+/* Remove modern UI styling */
 
 * {
   border-radius: 0 !important;
@@ -63,7 +64,6 @@ h1::before,
 h2::before,
 h3::before {
   content: "> ";
-  color: #00ff00;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -85,7 +85,7 @@ a:hover {
 }
 
 /* ============================================
-   LIST STYLING
+   LISTS
 ============================================ */
 
 ul {
@@ -95,32 +95,46 @@ ul {
 
 li::before {
   content: "> ";
-  color: #00ff00;
 }
 
 /* ============================================
-   NAVIGATION BAR FIX
+   REMOVE HAMBURGER
 ============================================ */
 
-header,
-.site-header,
-.site-nav,
-nav,
-.navigation,
-.menu,
-.dropdown,
-.page-links {
-  background: #000000 !important;
-  border-bottom: 1px solid #003300 !important;
+/* Hide mobile nav toggle */
+.nav-trigger,
+.menu-icon,
+.site-nav .menu-icon,
+.site-nav input[type="checkbox"] {
+  display: none !important;
 }
 
-/* Mobile dropdown */
+/* Force nav always visible */
+.site-nav {
+  display: block !important;
+  position: static !important;
+  background: #000000 !important;
+  border-bottom: 1px solid #003300 !important;
+  padding: 15px 0;
+}
+
+/* Nav list horizontal */
 
 .site-nav ul,
-.site-nav div,
-.page-links {
+.site-nav .page-links {
+  display: flex !important;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
   background: #000000 !important;
-  border: 1px solid #00ff00 !important;
+  border: none !important;
+}
+
+/* Nav items */
+
+.site-nav li {
+  margin: 0;
 }
 
 .site-nav a {
@@ -128,19 +142,25 @@ nav,
   text-shadow: 0 0 6px #00ff00;
 }
 
+.site-nav a::before {
+  content: "> ";
+}
+
 .site-nav a:hover {
   background: #001100 !important;
 }
 
 /* ============================================
-   REMOVE WHITE CONTENT WRAPPERS
+   REMOVE WHITE WRAPPERS
 ============================================ */
 
 .page-content,
 .wrapper,
 .post,
 .post-content,
-main {
+main,
+header,
+.site-header {
   background: transparent !important;
 }
 
@@ -156,7 +176,7 @@ footer,
 }
 
 /* ============================================
-   SCROLLBAR (optional but immersive)
+   SCROLLBAR
 ============================================ */
 
 ::-webkit-scrollbar {
@@ -172,7 +192,7 @@ footer,
 }
 
 /* ============================================
-   SUBTLE CRT FLICKER
+   CRT FLICKER
 ============================================ */
 
 @keyframes flicker {
@@ -181,12 +201,8 @@ footer,
   100% { opacity: 0.98; }
 }
 
-body {
-  animation: flicker 0.15s infinite;
-}
-
 /* ============================================
-   OPTIONAL: CENTER CONTENT LIKE TERMINAL
+   CENTER CONTENT
 ============================================ */
 
 .wrapper {
