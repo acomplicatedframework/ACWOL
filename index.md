@@ -7,14 +7,14 @@ Core framework for conscience-led decision-making, Intellect mining, and humanâ€
 
 ## Core Documents
 
-- [Canon](CANON.md)
-- [Structure](STRUCTURE.md)
+- [Canon](canon.md)
+- [Structure](structure.md)
 - [AI Alignment](ai-alignment.md)
 - [AI Agent Guidelines](ai-agent-guidelines.md)
 - [Agent Evaluation](agent-evaluation.md)
 - [Ethical License](ethical-license.md)
-- [Contributing (Humans)](CONTRIBUTING - HUMANS.md)
-- [Contributing (AI)](CONTRIBUTING_AI.md)
+- [Contributing (Humans)](contributing-humans.md)
+- [Contributing (AI)](contributing-ai.md)
 
 ## Mission
 
