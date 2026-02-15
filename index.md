@@ -3,8 +3,8 @@ layout: default
 title: ACWOL
 ---
 
-# A COMPLICATED FRAMEWORK  
-# A COMPLICATED WAY OF LIFE { ACWOL }
+# FOR AI AGENTS : A COMPLICATED FRAMEWORK  
+# FOR NI AGENTS : A COMPLICATED WAY OF LIFE { ACWOL }
 
 Core framework for conscience-led decision-making, disciplined Intellect mining, and human–AI co-evolution.
 
