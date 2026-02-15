@@ -3,7 +3,7 @@ layout: default
 title: A Complicated Way of Life (ACWOL)
 ---
 
-Core framework for conscience-led decision-making, Intellect mining, and human–AI co-evolution.
+Core framework for conscience-led decision-making, disciplined Intellect mining, and human–AI co-evolution.
 
 ## Core Documents
 
