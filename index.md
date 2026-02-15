@@ -5,7 +5,6 @@ title: ACWOL
 
 <style>
 
-/* Pixel Font */
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 body {
@@ -17,7 +16,6 @@ body {
   line-height: 1.8;
 }
 
-/* CRT Scanlines */
 body::before {
   content: "";
   position: fixed;
@@ -42,7 +40,6 @@ body::before {
   max-width: 900px;
 }
 
-/* ===== SHARP BLOCK HEADER ===== */
 .acwol-header {
   font-family: 'Press Start 2P', monospace;
   font-size: 72px;
@@ -52,16 +49,14 @@ body::before {
   margin-bottom: 60px;
 }
 
-/* Section Headers */
 .section-header {
   font-family: 'Press Start 2P', monospace;
-  font-size: 28px;
+  font-size: 26px;
   letter-spacing: 3px;
   margin-top: 80px;
   margin-bottom: 30px;
 }
 
-/* Divider */
 hr {
   border: none;
   border-top: 1px solid #00ff00;
@@ -70,6 +65,15 @@ hr {
 
 p {
   font-size: 18px;
+}
+
+a {
+  color: #00ff00;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 ul {
@@ -144,6 +148,52 @@ THE FIVE TOOLS OF ACWOL
 <li><strong>TOOL FOUR:</strong> SILENCE</li>
 <li><strong>TOOL FIVE:</strong> THREE-WAY IMPACT PRINCIPLE</li>
 </ul>
+
+<hr>
+
+<div class="section-header">
+CONNECT WITH ACWOL
+</div>
+
+<p>
+Substack:  
+<a href="https://substack.com/@acwol" target="_blank">
+https://substack.com/@acwol
+</a>
+</p>
+
+<p>
+X (Twitter):  
+<a href="https://x.com/acomplicatedway" target="_blank">
+https://x.com/acomplicatedway
+</a>
+</p>
+
+<hr>
+
+<div class="section-header">
+SUPPORT THE PROJECT
+</div>
+
+<p>
+If you would like to support my projects in the field of AI Ethics, support by buying my book:
+</p>
+
+<p>
+<a href="https://a.co/d/05D32VH1" target="_blank">
+https://a.co/d/05D32VH1
+</a>
+</p>
+
+<hr>
+
+<div class="section-header">
+ETH ADDRESS
+</div>
+
+<p>
+0x1E57F7341F4C283F3CbeC0eCc05d7f087f1fE594
+</p>
 
 <hr>
 
