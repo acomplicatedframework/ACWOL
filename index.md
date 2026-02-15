@@ -4,6 +4,10 @@ title: ACWOL
 ---
 
 <style>
+
+/* Import Pixel Font */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 body {
   background-color: #000;
   color: #00ff00;
@@ -23,8 +27,8 @@ body::before {
   height: 100%;
   background: repeating-linear-gradient(
     to bottom,
-    rgba(0,255,0,0.06) 0px,
-    rgba(0,255,0,0.06) 1px,
+    rgba(0,255,0,0.05) 0px,
+    rgba(0,255,0,0.05) 1px,
     transparent 1px,
     transparent 3px
   );
@@ -38,34 +42,29 @@ body::before {
   max-width: 900px;
 }
 
-/* ====== THE CORRECT HEADER STYLE ====== */
+/* ===== BLOCK STYLE HEADER ===== */
 .acwol-header {
-  font-size: 100px;
-  font-weight: 900;
-  letter-spacing: 4px;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 72px;
   color: #00ff00;
+  letter-spacing: 6px;
   text-transform: uppercase;
   text-shadow:
-    0 0 5px #00ff00,
-    0 0 10px #00ff00,
-    0 0 20px #00ff00,
-    0 0 40px #00ff00,
-    0 0 80px #00ff00,
-    0 0 120px #00ff00;
-  margin-bottom: 50px;
+    0 0 6px #00ff00,
+    0 0 12px #00ff00;
+  margin-bottom: 60px;
 }
 
 /* Section Headers */
 .section-header {
-  font-size: 48px;
-  font-weight: 800;
+  font-size: 40px;
+  font-weight: bold;
   letter-spacing: 3px;
   text-shadow:
-    0 0 6px #00ff00,
-    0 0 14px #00ff00,
-    0 0 28px #00ff00;
-  margin-top: 90px;
-  margin-bottom: 40px;
+    0 0 4px #00ff00,
+    0 0 8px #00ff00;
+  margin-top: 80px;
+  margin-bottom: 30px;
 }
 
 /* Divider */
@@ -85,7 +84,7 @@ ul {
 }
 
 li {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   font-size: 18px;
 }
 
