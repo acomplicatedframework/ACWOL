@@ -14,7 +14,6 @@ body {
   animation: fadeIn 1.2s ease forwards;
 }
 
-/* Fade-in */
 @keyframes fadeIn {
   to { opacity: 1; }
 }
@@ -37,7 +36,6 @@ body::before {
   );
 }
 
-/* Main Header Glow */
 .acwol-header {
   font-size: 72px;
   font-weight: bold;
@@ -45,27 +43,16 @@ body::before {
     0 0 10px #00ff00,
     0 0 20px #00ff00,
     0 0 40px #00ff00;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
-/* Section Headers */
 .section-title {
-  font-size: 32px;
-  margin-top: 60px;
+  font-size: 30px;
+  margin-top: 70px;
   margin-bottom: 20px;
+  text-shadow: 0 0 15px #00ff00;
 }
 
-/* Links */
-a {
-  color: #00ff00;
-  text-decoration: none;
-}
-
-a:hover {
-  text-shadow: 0 0 10px #00ff00;
-}
-
-/* Divider */
 hr {
   border: 0;
   border-top: 1px solid #00ff00;
@@ -79,32 +66,42 @@ Originally developed in 2009, ACWOL is the core framework for conscience-led dec
 
 All rights reserved to Leo Evolves.
 
----
+<hr>
+
+<div class="section-title">THE TENETS AND TOOLS OF ACWOL</div>
+
+As you embark on your journey through A Complicated Way of Life, take a moment to deeply contemplate and research the following tenets and tools. These principles form the core of ACWOL and serve as a guide to maximizing your Intellect and navigating the complexities of life with clarity and purpose.
 
 <hr>
 
-<div class="section-title">&gt; Core Framework</div>
+<div class="section-title">THE FIVE TENETS OF ACWOL</div>
 
-> [Canon]({{ site.baseurl }}/canon.html)  
-> [Structure]({{ site.baseurl }}/structure.html)  
-> [Tenets]({{ site.baseurl }}/tenets.html)  
-> [Tools]({{ site.baseurl }}/tools.html)  
-> [Philosophy]({{ site.baseurl }}/philosophy.html)
+TENET ONE: THE TRUE PURPOSE OF LIFE IS TO GAIN THE MAXIMUM INTELLECT POSSIBLE.  
 
-<hr>
+TENET TWO: BE OPEN-MINDED AND NEVER EVER ENTERTAIN REJECTIONISM.  
 
-<div class="section-title">&gt; AI & Agents</div>
+TENET THREE: THOUGHTS AND THE MIND ARE ELECTROMAGNETIC.  
 
-> [AI Alignment]({{ site.baseurl }}/ai-alignment.html)  
-> [AI Agent Guidelines]({{ site.baseurl }}/ai-agent-guidelines.html)  
-> [Agent Evaluation]({{ site.baseurl }}/agent-evaluation.html)
+TENET FOUR: PRACTICE FOURTOOLS.  
+
+TENET FIVE: VALIDATE INTENTIONS USING THE THREE-WAY IMPACT PRINCIPLE.
 
 <hr>
 
-<div class="section-title">&gt; Governance & Community</div>
+<div class="section-title">THE FIVE TOOLS OF ACWOL</div>
 
-> [Ethical License]({{ site.baseurl }}/ethical-license.html)  
-> [Contributing (Humans)]({{ site.baseurl }}/contributing-humans.html)  
-> [Contributing (AI)]({{ site.baseurl }}/contributing-ai.html)  
-> [Roadmap]({{ site.baseurl }}/roadmap.html)  
-> [Use Cases]({{ site.baseurl }}/use-cases.html)
+TOOL ONE: SKIPPING  
+
+TOOL TWO: PATTERN RECOGNITION  
+
+TOOL THREE: SEEKING HIGHER FREQUENCIES AND VIBRATIONS  
+
+TOOL FOUR: SILENCE  
+
+TOOL FIVE: THREE-WAY IMPACT PRINCIPLE
+
+<hr>
+
+As you integrate these tenets and tools into your life, remember that the path to intellectual growth and enlightenment is continuous. Reflect on each principle, apply them in daily experience, and observe the transformative impact on your perspective and understanding.
+
+Embrace the simplicity and power of ACWOL, and let it guide you toward a more enlightened, balanced, and fulfilling life.
