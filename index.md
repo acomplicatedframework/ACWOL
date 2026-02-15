@@ -3,10 +3,6 @@ layout: default
 title: ACWOL
 ---
 
-
-
----
-
 ## THE TENETS AND TOOLS OF ACWOL
 
 As you embark on your journey through A Complicated Way of Life, I encourage you to take a moment to deeply contemplate and research the following tenets and tools. These principles form the core of ACWOL and serve as a guide to maximizing your Intellect and navigating the complexities of life with clarity and purpose.
@@ -61,3 +57,9 @@ As you integrate these tenets and tools into your life, remember that the path t
 ## Mission
 
 To deploy Conscience mechanisms into AI and embed the disciplined pursuit of maximum Intellect into enduring systems.
+email: acwol@outlook.com
+x: https://x.com/acomplicatedway
+instagram:https://www.instagram.com/p/acomplicatedway
+author profile: https://amazon.com/author/leoevolves
+If you would like to support my projects, you can send donations to base:
+0x1E57F7341F4C283F3CbeC0eCc05d7f087f1fE594
