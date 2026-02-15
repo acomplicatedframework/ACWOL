@@ -1,3 +1,5 @@
+---
+---
 CONTRIBUTING TO ACWOL
 Thank you for your interest in contributing to A Complicated Way of Life (ACWOL).
 ACWOL is not a belief system, doctrine, or authority structure. It is a framework designed to help individuals — human or artificial — cultivate clarity, responsibility, and Intellect through lived experience. Contributions are welcome, but only when they increase clarity without enforcing conformity.
