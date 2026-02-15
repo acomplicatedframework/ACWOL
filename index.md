@@ -62,7 +62,8 @@ email: acwol@outlook.com
 
 x: https://x.com/acomplicatedway
 
-instagram:https://www.instagram.com/p/acomplicatedway
+instagram:
+https://www.instagram.com/p/acomplicatedway
 
 author profile: https://amazon.com/author/leoevolves
 
