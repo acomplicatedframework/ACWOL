@@ -2,7 +2,7 @@
 ---
 
 /* ===============================
-   ACWOL TERMINAL OPERATING MODE
+   ACWOL TERMINAL OS v1.1
    =============================== */
 
 body {
@@ -10,80 +10,92 @@ body {
   color: #00ff00 !important;
   font-family: "Courier New", monospace !important;
   line-height: 1.7;
-  margin: 40px;
+  margin: 50px;
   font-size: 18px;
+  text-shadow: 0 0 4px #00ff00;
 }
 
-/* Boot message */
-body::before {
-  content: "ACWOL v1.0 — System Initialized";
-  display: block;
-  margin-bottom: 25px;
+/* ===============================
+   BOOT MESSAGE PER PAGE
+   =============================== */
+
+h1::before {
+  content: "> loading module...\A\A";
+  white-space: pre;
   color: #00ff00;
 }
 
-/* Blinking cursor */
-@keyframes blink {
-  0% { opacity: 1; }
-  50% { opacity: 0; }
-  100% { opacity: 1; }
-}
+/* ===============================
+   TERMINAL PROMPT STYLE LINKS
+   =============================== */
 
-body::after {
-  content: "_";
-  animation: blink 1s infinite;
-  margin-left: 5px;
-}
-
-/* Headings */
-h1, h2, h3, h4, h5, h6 {
-  color: #00ff00 !important;
-  font-weight: normal;
-}
-
-/* Force links pure green */
 a {
   color: #00ff00 !important;
-  text-decoration: underline;
+  text-decoration: none;
+}
+
+a::before {
+  content: "> ";
 }
 
 a:hover {
   color: #66ff66 !important;
 }
 
-/* Remove navigation / hamburger */
+/* ===============================
+   REMOVE NAVIGATION COMPLETELY
+   =============================== */
+
 .site-nav,
 .menu-icon,
 .site-header,
-.site-footer
-a:hover {
-  color: #66ff66;
+.site-footer {
+  display: none !important;
 }
 
-/* Lists */
+/* ===============================
+   CRT GLOW EFFECT
+   =============================== */
+
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(0, 255, 0, 0.03),
+    rgba(0, 255, 0, 0.03) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+}
+
+/* ===============================
+   HEADINGS
+   =============================== */
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  color: #00ff00 !important;
+}
+
+/* ===============================
+   LISTS
+   =============================== */
+
 li {
-  margin-bottom: 6px;
+  margin-bottom: 10px;
 }
 
-/* Code blocks */
-code, pre {
-  background: #000000;
-  color: #00ff00;
-  border: none;
-  font-family: "Courier New", Courier, monospace;
-}
+/* ===============================
+   REMOVE SHADOWS + BORDERS
+   =============================== */
 
-/* Horizontal rules */
-hr {
-  border: 1px solid #00ff00;
-}
-
-/* Remove box shadows */
 * {
   box-shadow: none !important;
-}
-
-/* Make page look more terminal-like */
-.wrapper {
-  max-width: 800px;
+  border-radius: 0 !important;
 }
