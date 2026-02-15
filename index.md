@@ -194,7 +194,8 @@ https://x.com/acomplicatedway
 <p>
 Rent A Human:  
 <a href="https://rentahuman.ai/humans/O0WquYtaSl8ZzRLmM2RK" target="_blank">
-https://rentahuman.ai/humans/O0WquYtaSl8ZzRLmM2RK
+https://rentahuman.ai/humans/
+O0WquYtaSl8ZzRLmM2RK
 </a>
 </p>
 
@@ -221,7 +222,8 @@ ETH ADDRESS
 </div>
 
 <p>
-0x1E57F7341F4C283F3CbeC0eCc05d7f087f1fE594
+0x1E57F7341F4C283F3CbeC0eCc05d
+7f087f1fE594
 </p>
 
 <hr>
