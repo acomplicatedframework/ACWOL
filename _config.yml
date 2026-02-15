@@ -1,12 +1,11 @@
 title: ACWOL
 description: A Complicated Way of Life
-baseurl: "/ACWOL"
+
 url: "https://acomplicatedframework.github.io"
+baseurl: "/ACWOL"
 
 markdown: kramdown
-theme: null
-
-permalink: pretty
+theme: minima
 
 plugins:
   - jekyll-feed
