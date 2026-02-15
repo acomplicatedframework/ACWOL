@@ -7,133 +7,21 @@
 
 <style>
 
-/* =========================
-   BASE TERMINAL STYLE
-========================= */
-
 body {
   background: #000;
   color: #00ff00;
   font-family: "Courier New", monospace;
   line-height: 1.8;
   max-width: 900px;
-  margin: 60px auto;
+  margin: 30px auto;
   padding: 20px;
   text-transform: lowercase;
+  position: relative;
   opacity: 0;
   animation: fadeIn 1.5s ease forwards;
 }
 
-@keyframes fadeIn {
-  to { opacity: 1; }
-}
-
-/* =========================
-   MASSIVE ACWOL BANNER
-========================= */
-
-.super-hero {
-  font-size: 4rem;
-  font-weight: 900;
-  letter-spacing: 8px;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  color: #00ff00;
-  text-shadow:
-    0 0 10px #00ff00,
-    0 0 20px #00ff00,
-    0 0 40px #00ff00;
-  animation: superGlow 2s infinite alternate;
-}
-
-@keyframes superGlow {
-  from {
-    text-shadow:
-      0 0 10px #00ff00,
-      0 0 20px #00ff00;
-  }
-  to {
-    text-shadow:
-      0 0 20px #00ff00,
-      0 0 40px #00ff00,
-      0 0 60px #00ff00;
-  }
-}
-
-/* =========================
-   SECONDARY HEADER
-========================= */
-
-.hero-title {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #00ff00;
-  margin-bottom: 30px;
-}
-
-/* =========================
-   BLINKING CURSOR
-========================= */
-
-.cursor {
-  display: inline-block;
-  width: 10px;
-  background: #00ff00;
-  margin-left: 5px;
-  animation: blink 1s infinite;
-}
-
-@keyframes blink {
-  50% { opacity: 0; }
-}
-
-/* =========================
-   BOOT SEQUENCE
-========================= */
-
-.boot {
-  opacity: 0;
-  animation: bootText 0.6s forwards;
-}
-
-.boot:nth-child(1) { animation-delay: 0.5s; }
-.boot:nth-child(2) { animation-delay: 1s; }
-.boot:nth-child(3) { animation-delay: 1.5s; }
-
-@keyframes bootText {
-  to { opacity: 1; }
-}
-
-/* =========================
-   LINKS
-========================= */
-
-a {
-  color: #00ff00;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* =========================
-   LISTS
-========================= */
-
-ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-li:before {
-  content: "> ";
-}
-
-/* =========================
-   CRT SCANLINES
-========================= */
-
+/* === SCANLINES === */
 body::after {
   content: "";
   position: fixed;
@@ -149,24 +37,123 @@ body::after {
   z-index: 9999;
 }
 
+/* === MAIN ACWOL TITLE === */
+.super-hero {
+  font-size: clamp(4rem, 12vw, 8rem);
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: 1rem;
+  margin: 40px 0 10px 0;
+  text-transform: uppercase;
+  color: #00ff00;
+
+  text-shadow:
+    0 0 20px #00ff00,
+    0 0 40px #00ff00,
+    0 0 80px #00ff00,
+    0 0 120px #00ff00;
+
+  animation: superGlow 2s infinite alternate;
+}
+
+/* Blinking Cursor */
+.cursor {
+  display: inline-block;
+  width: 10px;
+  background: #00ff00;
+  margin-left: 10px;
+  animation: blink 1s infinite;
+}
+
+/* === Boot Text === */
+.boot {
+  font-size: 0.9rem;
+  opacity: 0;
+  animation: bootText 0.6s forwards;
+}
+
+.boot:nth-child(1) { animation-delay: 0.5s; }
+.boot:nth-child(2) { animation-delay: 1s; }
+.boot:nth-child(3) { animation-delay: 1.5s; }
+
+/* === Headings === */
+h1, h2, h3 {
+  color: #00ff00;
+  margin: 40px 0 15px;
+}
+
+h2::before {
+  content: "> ";
+}
+
+/* === Links === */
+a {
+  color: #00ff00;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* === Lists === */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li::before {
+  content: "> ";
+}
+
+/* === Divider === */
+hr {
+  border: none;
+  border-top: 1px solid #00ff00;
+  margin: 40px 0;
+}
+
+/* === Animations === */
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+@keyframes superGlow {
+  from {
+    text-shadow:
+      0 0 20px #00ff00,
+      0 0 40px #00ff00;
+  }
+  to {
+    text-shadow:
+      0 0 40px #00ff00,
+      0 0 80px #00ff00,
+      0 0 120px #00ff00;
+  }
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+@keyframes bootText {
+  to { opacity: 1; }
+}
+
 </style>
 </head>
 
 <body>
 
-<div class="super-hero">ACWOL</div>
+<div class="super-hero">
+  ACWOL<span class="cursor"></span>
+</div>
 
 <div class="boot">initializing acwol system...</div>
 <div class="boot">loading conscience protocols...</div>
-<div class="boot">intellect engine online.</div>
+<div class="boot">intellect mining protocol loading.</div>
 
-<br>
-
-<div class="hero-title">
-  a complicated framework / a complicated way of life { acwol }<span class="cursor"></span>
-</div>
-
-<br><br>
+<hr>
 
 {{ content }}
 
