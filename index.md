@@ -204,6 +204,18 @@ ETH ADDRESS
 
 <hr>
 
+<div class="section-header">
+LICENSE
+</div>
+
+<p>
+This project is governed by the ACWOL Ethical AI License.  
+Human-centered, conscience-aligned, non-exploitative use only.  
+For full license terms, see the LICENSE file in the root of this repository.
+</p>
+
+<hr>
+
 <p>
 As you integrate these tenets and tools into your life, remember that intellectual growth is continuous. Reflect, apply, observe.
 </p>
