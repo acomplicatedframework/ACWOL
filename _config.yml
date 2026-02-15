@@ -3,4 +3,6 @@ description: Conscience-led systems and Intellect mining framework
 theme: minima
 markdown: kramdown
 permalink: pretty
-show_excerpts: false
+
+sass:
+  style: compressed
