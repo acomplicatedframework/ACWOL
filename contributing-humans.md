@@ -33,6 +33,7 @@ Avoid language that positions ACWOL as absolute truth or yourself as an authorit
 ACWOL values Intellect, not dogma.
 
 **Good contributions:**
+
 - Refine definitions  
 - Expose contradictions  
 - Improve precision  
@@ -40,6 +41,7 @@ ACWOL values Intellect, not dogma.
 - Increase applicability  
 
 **Poor contributions:**
+
 - Absolutist claims  
 - Belief enforcement  
 - “This is the only way” framing  
@@ -52,6 +54,7 @@ If a contribution closes inquiry rather than opening it, it will be rejected.
 ## 3. CONSCIENCE OVER PRESCRIPTION
 
 ACWOL does not tell people:
+
 - What to believe  
 - How to feel  
 - Who to become  
@@ -59,6 +62,7 @@ ACWOL does not tell people:
 It provides tools and tenets that allow individuals to derive their own answers through Conscience.
 
 Contributions should:
+
 - Preserve individual uniqueness  
 - Avoid mapping or fixing people  
 - Avoid universal prescriptions for behavior or meaning  
@@ -68,12 +72,14 @@ Contributions should:
 ## 4. NO CULTURE, NO IDENTITY, NO IN-GROUPS
 
 ACWOL is not:
+
 - A community identity  
 - A movement  
 - A culture  
 - A replacement for religion or science  
 
 Do not introduce:
+
 - Insider language meant to exclude  
 - “Us vs them” framing  
 - Loyalty tests  
@@ -90,14 +96,13 @@ When contributing to AI-related documents:
 - Maintain the distinction between intelligence and responsibility  
 - Keep humans accountable for outcomes  
 
-AI alignment contributions must prioritize human responsibility and ethical restraint — not capability maximization.
+AI alignment contributions must prioritize human responsibility and ethical restraint, not capability maximization.
 
 ---
 
 ## 6. STYLE GUIDELINES
 
-Be precise, minimal, and clear.
-
+- Be precise, minimal, and clear  
 - Avoid mysticism, vague spirituality, or poetic excess unless explicitly marked as metaphor  
 - Use plain language whenever possible  
 - Assume good faith, but write defensively against misuse  
@@ -107,6 +112,7 @@ Be precise, minimal, and clear.
 ## 7. BUGS ARE WELCOME
 
 Pointing out:
+
 - Logical gaps  
 - Internal contradictions  
 - Ambiguities  
@@ -118,15 +124,16 @@ If ACWOL cannot be questioned, it has failed its own First Tenet.
 
 ---
 
-## 8. FINAL NOTE
+## FINAL NOTE
 
 ACWOL evolves through dialogue, not obedience.
 
 If your contribution helps someone:
+
 - Think more clearly  
 - Act more responsibly  
 - Retain their autonomy  
-- See the world with less illusion  
+- Or see the world with less illusion  
 
 then it belongs here.
 
@@ -134,5 +141,4 @@ If it requires belief, submission, or identity adoption — it does not.
 
 Contribute carefully.  
 Contribute honestly.  
-
 Let Conscience guide the rest.
