@@ -215,8 +215,8 @@ Human-centered, conscience-aligned, non-exploitative use only.
 
 <p>
 Full license terms:
-<a href="https://github.com/acomplicatedframework/ACWOL/blob/main/LICENSE" target="_blank">
-https://github.com/acomplicatedframework/ACWOL/blob/main/LICENSE
+<a href="/ACWOL/LICENSE" target="_blank">
+View LICENSE
 </a>
 </p>
 
