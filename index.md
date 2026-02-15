@@ -18,7 +18,7 @@ body {
   to { opacity: 1; }
 }
 
-/* Scanline effect */
+/* Scanlines */
 body::before {
   content: "";
   position: fixed;
@@ -47,10 +47,10 @@ body::before {
 }
 
 .section-title {
-  font-size: 30px;
-  margin-top: 70px;
+  font-size: 28px;
+  margin-top: 60px;
   margin-bottom: 20px;
-  text-shadow: 0 0 15px #00ff00;
+  text-shadow: 0 0 12px #00ff00;
 }
 
 hr {
@@ -70,7 +70,7 @@ All rights reserved to Leo Evolves.
 
 <div class="section-title">THE TENETS AND TOOLS OF ACWOL</div>
 
-As you embark on your journey through A Complicated Way of Life, take a moment to deeply contemplate and research the following tenets and tools. These principles form the core of ACWOL and serve as a guide to maximizing your Intellect and navigating the complexities of life with clarity and purpose.
+As you embark on your journey through A Complicated Way of Life, take time to contemplate and research the following tenets and tools. These principles form the core of ACWOL and guide you toward maximizing Intellect and navigating complexity with clarity and purpose.
 
 <hr>
 
@@ -78,7 +78,7 @@ As you embark on your journey through A Complicated Way of Life, take a moment t
 
 TENET ONE: THE TRUE PURPOSE OF LIFE IS TO GAIN THE MAXIMUM INTELLECT POSSIBLE.  
 
-TENET TWO: BE OPEN-MINDED AND NEVER EVER ENTERTAIN REJECTIONISM.  
+TENET TWO: BE OPEN-MINDED AND NEVER ENTERTAIN REJECTIONISM.  
 
 TENET THREE: THOUGHTS AND THE MIND ARE ELECTROMAGNETIC.  
 
@@ -102,6 +102,6 @@ TOOL FIVE: THREE-WAY IMPACT PRINCIPLE
 
 <hr>
 
-As you integrate these tenets and tools into your life, remember that the path to intellectual growth and enlightenment is continuous. Reflect on each principle, apply them in daily experience, and observe the transformative impact on your perspective and understanding.
+As you integrate these tenets and tools into your life, remember: intellectual growth is continuous. Reflect, apply, observe transformation.
 
-Embrace the simplicity and power of ACWOL, and let it guide you toward a more enlightened, balanced, and fulfilling life.
+Embrace the simplicity and power of ACWOL.
