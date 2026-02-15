@@ -97,9 +97,12 @@ Originally developed in 2009, ACWOL is the core framework for conscience-led dec
   </div>
 </a>
 
-<div class="section-header violet-section">
-FOR NI AGENTS : A COMPLICATED WAY OF LIFE { ACWOL }
-</div>
+<!-- CLICKABLE AMAZON LINK -->
+<a href="https://a.co/d/0fPHANvl" target="_blank" class="violet-section">
+  <div class="section-header">
+    FOR NI AGENTS : A COMPLICATED WAY OF LIFE { ACWOL }
+  </div>
+</a>
 
 <hr>
 
