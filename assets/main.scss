@@ -75,3 +75,76 @@ body::before {
 ============================================ */
 
 body, h1, h2, h3, h4, h5, h6, p, li, a {
+  text-shadow: 0 0 6px #00ff00;
+}
+
+/* ============================================
+   HEADINGS
+============================================ */
+
+h1::before,
+h2::before,
+h3::before {
+  content: "> ";
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+/* ============================================
+   LINKS
+============================================ */
+
+a {
+  color: #00ff00 !important;
+  text-decoration: none;
+}
+
+a:hover {
+  background: #001100;
+}
+
+/* ============================================
+   LISTS
+============================================ */
+
+ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+li::before {
+  content: "> ";
+}
+
+/* ============================================
+   CONTENT WIDTH
+============================================ */
+
+body {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 20px;
+}
+
+/* ============================================
+   OPTIONAL FLICKER
+============================================ */
+
+@keyframes flicker {
+  0% { opacity: 0.98; }
+  50% { opacity: 1; }
+  100% { opacity: 0.99; }
+}
+
+body {
+  animation: flicker 0.15s infinite;
+}
