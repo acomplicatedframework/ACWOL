@@ -17,4 +17,4 @@ Core framework for conscience-led decision-making, Intellect mining, and humanâ€
 
 ## Mission
 
-To embed disciplined pursuit of maximum Intellect into enduring systems.
+To embed Conscience into AI and institutionalize the disciplined pursuit of maximum Intellect.
