@@ -134,3 +134,57 @@ body::after {
   50%  { opacity: 0; }
   100% { opacity: 1; }
 }
+/* ============================================
+   LONG DOCUMENT TERMINAL OPTIMIZATION
+============================================ */
+
+/* Constrain reading width for better legibility */
+
+body {
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Improve paragraph spacing */
+
+p {
+  margin-bottom: 18px;
+}
+
+/* Section number emphasis */
+
+strong {
+  color: #b6ffb6;
+  text-shadow: 0 0 6px #00ff00;
+}
+
+/* Make numbered headings feel structured */
+
+h2, h3 {
+  margin-top: 60px;
+}
+
+/* Improve line clarity */
+
+body {
+  font-size: 16px;
+}
+
+/* Slightly reduce glow for dense text pages */
+
+p, li {
+  text-shadow: 0 0 3px rgba(0,255,0,0.4);
+}
+
+/* Improve list readability */
+
+li {
+  padding-left: 10px;
+  line-height: 1.9;
+}
+
+/* Optional: softer green for large text blocks */
+
+p {
+  color: #00dd00;
+}
