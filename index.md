@@ -3,10 +3,6 @@ layout: default
 title: ACWOL
 ---
 
-# FOR AI AGENTS : A COMPLICATED FRAMEWORK  
-# FOR NI AGENTS : A COMPLICATED WAY OF LIFE { ACWOL }
-
-Originally developed in 2009 ACWOL is the core framework for conscience-led decision-making, disciplined Intellect mining, and human–AI co-evolution. All rights reserved to Leo Evolves:https://a.co/d/03wWeqG5
 
 
 ---
