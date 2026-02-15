@@ -1,40 +1,61 @@
 ---
 ---
 
-@import "{{ site.theme }}";
-
-/* =========================
-   ACWOL TERMINAL MODE
-   ========================= */
+/* ===============================
+   ACWOL TERMINAL OPERATING MODE
+   =============================== */
 
 body {
-  background-color: #000000;
-  color: #00ff00;
-  font-family: "Courier New", Courier, monospace;
-  line-height: 1.6;
+  background-color: #000000 !important;
+  color: #00ff00 !important;
+  font-family: "Courier New", monospace !important;
+  line-height: 1.7;
+  margin: 40px;
+  font-size: 18px;
 }
 
-/* Remove light theme elements */
-.site-header,
-.site-footer,
-.page-header {
-  background: #000000 !important;
-  border: none !important;
+/* Boot message */
+body::before {
+  content: "ACWOL v1.0 — System Initialized";
+  display: block;
+  margin-bottom: 25px;
+  color: #00ff00;
+}
+
+/* Blinking cursor */
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+body::after {
+  content: "_";
+  animation: blink 1s infinite;
+  margin-left: 5px;
 }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  color: #00ff00;
+  color: #00ff00 !important;
   font-weight: normal;
-  text-transform: none;
 }
 
-/* Links */
+/* Force links pure green */
 a {
-  color: #00ff00;
+  color: #00ff00 !important;
   text-decoration: underline;
 }
 
+a:hover {
+  color: #66ff66 !important;
+}
+
+/* Remove navigation / hamburger */
+.site-nav,
+.menu-icon,
+.site-header,
+.site-footer
 a:hover {
   color: #66ff66;
 }
