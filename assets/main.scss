@@ -4,187 +4,148 @@
 @import "{{ site.theme }}";
 
 /* ============================================
-   ACWOL TERMINAL MODE v2
+   ACWOL TERMINAL MODE — FULL SYSTEM
 ============================================ */
 
-/* Base Terminal */
+/* Base terminal environment */
 
 body {
-  background-color: #000000;
-  color: #00ff00;
-  font-family: "Courier New", Courier, monospace;
-  line-height: 1.8;
-  letter-spacing: 1px;
-  padding: 40px;
-  text-shadow: 0 0 6px rgba(0,255,0,0.7);
-  animation: flicker 0.18s infinite;
+  background-color: #000000 !important;
+  color: #00ff00 !important;
+  font-family: "Courier New", Courier, monospace !important;
+  line-height: 1.7;
+  font-size: 16px;
+  max-width: 900px;
+  margin: auto;
+  text-shadow: 0 0 6px #00ff00;
+  animation: flicker 0.15s infinite alternate;
 }
 
-/* Subtle Flicker */
+/* Subtle CRT flicker */
 
 @keyframes flicker {
-  0%   { opacity: 0.985; }
-  50%  { opacity: 1; }
-  100% { opacity: 0.99; }
+  from { opacity: 0.98; }
+  to { opacity: 1; }
 }
 
-/* CRT Scanlines */
+/* Scanline overlay */
 
 body::before {
   content: "";
   position: fixed;
   inset: 0;
-  pointer-events: none;
   background: repeating-linear-gradient(
     to bottom,
-    rgba(0, 255, 0, 0.04) 0px,
+    rgba(0, 255, 0, 0.04),
     rgba(0, 255, 0, 0.04) 1px,
     transparent 1px,
     transparent 3px
   );
+  pointer-events: none;
   z-index: 9999;
 }
 
-/* Remove Light Theme Artifacts */
+/* Remove light theme elements */
 
 .site-header,
 .site-footer,
 .page-header {
-  background: #000 !important;
+  background: #000000 !important;
   border: none !important;
 }
 
-/* Headings as Commands */
+/* Headings */
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6 {
+  color: #00ff00 !important;
   font-weight: normal;
   text-transform: lowercase;
-  letter-spacing: 3px;
-  margin-top: 50px;
-  margin-bottom: 20px;
+  letter-spacing: 2px;
+  margin-top: 60px;
 }
 
+/* Command prompt before headings */
+
 h1::before,
-h2::before,
-h3::before {
+h2::before {
   content: "> ";
   color: #00ff00;
 }
 
-/* Reduce glow on paragraphs */
-
-p {
-  text-shadow: 0 0 4px rgba(0,255,0,0.5);
-}
-
-/* Terminal Links */
+/* Links */
 
 a {
   color: #00ff00 !important;
   text-decoration: none;
-  transition: 0.2s ease;
 }
 
 a:hover {
-  color: #b6ffb6 !important;
-  text-shadow: 0 0 10px #00ff00;
+  text-shadow: 0 0 12px #00ff00;
 }
 
-/* Remove Bullets */
+/* Lists styled as terminal commands */
 
 ul {
   list-style: none;
   padding-left: 0;
-  margin-left: 20px;
 }
 
-li {
-  margin: 12px 0;
-}
-
-li::before {
+ul li::before {
   content: "> ";
-  margin-right: 8px;
+  color: #00ff00;
 }
 
-/* Boot Fade */
-
-html {
-  animation: bootfade 0.7s ease-in;
-}
-
-@keyframes bootfade {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-/* Cursor at Bottom */
-
-body::after {
-  content: "\A\A> _";
-  white-space: pre;
-  display: block;
-  margin-top: 80px;
-  font-weight: bold;
-  animation: blink 1s infinite;
-}
-
-@keyframes blink {
-  0%   { opacity: 1; }
-  50%  { opacity: 0; }
-  100% { opacity: 1; }
-}
-/* ============================================
-   LONG DOCUMENT TERMINAL OPTIMIZATION
-============================================ */
-
-/* Constrain reading width for better legibility */
-
-body {
-  max-width: 900px;
-  margin: auto;
-}
-
-/* Improve paragraph spacing */
+/* Paragraph spacing */
 
 p {
   margin-bottom: 18px;
-}
-
-/* Section number emphasis */
-
-strong {
-  color: #b6ffb6;
-  text-shadow: 0 0 6px #00ff00;
-}
-
-/* Make numbered headings feel structured */
-
-h2, h3 {
-  margin-top: 60px;
-}
-
-/* Improve line clarity */
-
-body {
-  font-size: 16px;
-}
-
-/* Slightly reduce glow for dense text pages */
-
-p, li {
+  color: #00dd00;
   text-shadow: 0 0 3px rgba(0,255,0,0.4);
 }
 
-/* Improve list readability */
+/* List readability */
 
 li {
-  padding-left: 10px;
   line-height: 1.9;
+  padding-left: 10px;
 }
 
-/* Optional: softer green for large text blocks */
+/* Strong emphasis */
 
-p {
-  color: #00dd00;
+strong {
+  color: #b6ffb6;
+  text-shadow: 0 0 8px #00ff00;
+}
+
+/* Blockquotes look like system logs */
+
+blockquote {
+  border-left: 2px solid #00ff00;
+  padding-left: 15px;
+  color: #66ff66;
+}
+
+/* Code blocks */
+
+pre, code {
+  background: #001100;
+  color: #00ff00;
+  padding: 6px;
+  border: 1px solid #00ff00;
+  text-shadow: none;
+}
+
+/* Optional loading banner at top of homepage */
+
+h1:first-of-type::before {
+  content: "> loading module...\A";
+  white-space: pre;
+  display: block;
+  margin-bottom: 20px;
+}
+
+/* Smooth scrolling */
+
+html {
+  scroll-behavior: smooth;
 }
