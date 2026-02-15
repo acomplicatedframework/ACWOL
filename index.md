@@ -5,7 +5,7 @@ title: ACWOL
 
 <style>
 
-/* Import Pixel Font */
+/* Pixel Font */
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 body {
@@ -42,27 +42,21 @@ body::before {
   max-width: 900px;
 }
 
-/* ===== BLOCK STYLE HEADER ===== */
+/* ===== SHARP BLOCK HEADER ===== */
 .acwol-header {
   font-family: 'Press Start 2P', monospace;
   font-size: 72px;
   color: #00ff00;
   letter-spacing: 6px;
   text-transform: uppercase;
-  text-shadow:
-    0 0 6px #00ff00,
-    0 0 12px #00ff00;
   margin-bottom: 60px;
 }
 
 /* Section Headers */
 .section-header {
-  font-size: 40px;
-  font-weight: bold;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 28px;
   letter-spacing: 3px;
-  text-shadow:
-    0 0 4px #00ff00,
-    0 0 8px #00ff00;
   margin-top: 80px;
   margin-bottom: 30px;
 }
