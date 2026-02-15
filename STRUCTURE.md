@@ -1,4 +1,6 @@
-# ACWOL Structure
+---
+title: ACWOL Structure
+---
 
 - tenets.md — Core axioms (non-negotiable)
 - tools.md — Cognitive practices derived from the tenets
