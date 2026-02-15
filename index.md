@@ -2,6 +2,7 @@
 layout: default
 title: ACWOL
 ---
+
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
@@ -38,14 +39,47 @@ body::before {
   max-width: 900px;
 }
 
+/* ============================= */
+/* NEW BLOCK-STYLE ACWOL HEADER */
+/* ============================= */
+
 .acwol-header {
   font-family: 'Press Start 2P', monospace;
-  font-size: 72px;
-  color: #00ff00;
-  letter-spacing: 6px;
+  font-size: 90px;
+  letter-spacing: 10px;
   text-transform: uppercase;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
+  position: relative;
+  display: inline-block;
+  color: #00ff00;
 }
+
+/* Thick block illusion */
+.acwol-header::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  color: #003300;
+  z-index: -1;
+}
+
+/* Individual letter segmentation */
+.acwol-header span {
+  position: relative;
+  display: inline-block;
+}
+
+.acwol-header span::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 2px solid #00aa00;
+  box-sizing: border-box;
+  opacity: 0.25;
+}
+
+/* ============================= */
 
 .section-header {
   font-family: 'Press Start 2P', monospace;
@@ -55,12 +89,10 @@ body::before {
   margin-bottom: 30px;
 }
 
-/* Violet only for the two agent lines */
 .violet-section {
   color: #8A2BE2;
 }
 
-/* Make clickable blocks keep same look */
 a.violet-section {
   text-decoration: none;
   display: block;
@@ -99,7 +131,10 @@ li {
 
 <div class="container">
 
-<div class="acwol-header">ACWOL</div>
+<!-- UPDATED HEADER -->
+<div class="acwol-header" data-text="ACWOL">
+  <span>A</span><span>C</span><span>W</span><span>O</span><span>L</span>
+</div>
 
 <p>
 Originally developed in 2009, ACWOL is the core framework for conscience-led decision-making, disciplined Intellect mining, and human–AI co-evolution.
