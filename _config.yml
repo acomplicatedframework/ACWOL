@@ -6,3 +6,6 @@ permalink: pretty
 
 sass:
   style: compressed
+
+minima:
+  skin: dark
