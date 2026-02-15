@@ -5,14 +5,17 @@
 <title>{{ page.title }}</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<!-- Block Display Font -->
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+
 <style>
 body {
   background: #000;
   color: #00ff00;
   font-family: "Courier New", monospace;
-  margin: 40px auto;
-  padding: 20px;
-  max-width: 1000px;
+  margin: 0;
+  padding: 60px 40px;
+  max-width: 1200px;
   line-height: 1.8;
   animation: fadeIn 1.5s ease-in;
 }
@@ -25,29 +28,29 @@ body::after {
   pointer-events: none;
   background: repeating-linear-gradient(
     to bottom,
-    rgba(0,255,0,0.05) 0px,
-    rgba(0,255,0,0.05) 1px,
+    rgba(0,255,0,0.04) 0px,
+    rgba(0,255,0,0.04) 1px,
     transparent 2px,
     transparent 4px
   );
   z-index: 9999;
 }
 
-/* Massive ACWOL Header */
+/* ACWOL HERO HEADER */
 .super-hero {
-  font-size: clamp(5rem, 14vw, 10rem);
+  font-family: 'Orbitron', monospace;
   font-weight: 900;
-  letter-spacing: 0.8rem;
+  font-size: clamp(6rem, 16vw, 12rem);
+  letter-spacing: 1rem;
   text-transform: uppercase;
   text-align: left;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
   color: #00ff00;
   text-shadow:
-    0 0 20px #00ff00,
-    0 0 40px #00ff00,
-    0 0 80px #00ff00,
-    0 0 120px #00ff00;
-  animation: glow 2s infinite alternate;
+    0 0 25px #00ff00,
+    0 0 60px #00ff00,
+    0 0 120px #00ff00,
+    0 0 200px #00ff00;
 }
 
 /* Thin Cursor */
@@ -55,33 +58,27 @@ body::after {
   display: inline-block;
   width: 0;
   height: 0.9em;
-  border-left: 3px solid #00ff00;
-  margin-left: 6px;
+  border-left: 2px solid #00ff00;
+  margin-left: 8px;
   animation: blink 1s infinite;
 }
 
-/* Boot Text */
+/* Boot text */
 .boot {
   font-size: 0.9rem;
-  opacity: 0;
-  animation: bootText 0.6s forwards;
+  opacity: 0.7;
 }
-
-.boot:nth-child(2) { animation-delay: 0.5s; }
-.boot:nth-child(3) { animation-delay: 1s; }
-.boot:nth-child(4) { animation-delay: 1.5s; }
 
 hr {
   border: none;
   border-top: 1px solid #00ff00;
   margin: 40px 0;
-  opacity: 0.6;
+  opacity: 0.5;
 }
 
-/* Headings */
+/* Section headings */
 h2, h3 {
-  color: #00ff00;
-  margin-top: 40px;
+  margin-top: 60px;
 }
 
 h2::before {
@@ -113,22 +110,8 @@ li::before {
   50% { opacity: 0; }
 }
 
-@keyframes glow {
-  from { text-shadow: 0 0 15px #00ff00; }
-  to {
-    text-shadow:
-      0 0 30px #00ff00,
-      0 0 60px #00ff00,
-      0 0 100px #00ff00;
-  }
-}
-
 @keyframes fadeIn {
   from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-@keyframes bootText {
   to { opacity: 1; }
 }
 </style>
