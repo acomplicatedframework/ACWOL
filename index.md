@@ -170,7 +170,7 @@ https://x.com/acomplicatedway
 </p>
 
 <p>
-Rent-a-Human:  
+Rent A Human:  
 <a href="https://rentahuman.ai/humans/O0WquYtaSl8ZzRLmM2RK" target="_blank">
 https://rentahuman.ai/humans/O0WquYtaSl8ZzRLmM2RK
 </a>
@@ -210,8 +210,14 @@ LICENSE
 
 <p>
 This project is governed by the ACWOL Ethical AI License.  
-Human-centered, conscience-aligned, non-exploitative use only.  
-For full license terms, see the LICENSE file in the root of this repository.
+Human-centered, conscience-aligned, non-exploitative use only.
+</p>
+
+<p>
+Full license terms:
+<a href="https://github.com/acomplicatedframework/ACWOL/blob/main/LICENSE" target="_blank">
+https://github.com/acomplicatedframework/ACWOL/blob/main/LICENSE
+</a>
 </p>
 
 <hr>
