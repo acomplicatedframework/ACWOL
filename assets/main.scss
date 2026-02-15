@@ -1,0 +1,68 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* =========================
+   ACWOL TERMINAL MODE
+   ========================= */
+
+body {
+  background-color: #000000;
+  color: #00ff00;
+  font-family: "Courier New", Courier, monospace;
+  line-height: 1.6;
+}
+
+/* Remove light theme elements */
+.site-header,
+.site-footer,
+.page-header {
+  background: #000000 !important;
+  border: none !important;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #00ff00;
+  font-weight: normal;
+  text-transform: none;
+}
+
+/* Links */
+a {
+  color: #00ff00;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #66ff66;
+}
+
+/* Lists */
+li {
+  margin-bottom: 6px;
+}
+
+/* Code blocks */
+code, pre {
+  background: #000000;
+  color: #00ff00;
+  border: none;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* Horizontal rules */
+hr {
+  border: 1px solid #00ff00;
+}
+
+/* Remove box shadows */
+* {
+  box-shadow: none !important;
+}
+
+/* Make page look more terminal-like */
+.wrapper {
+  max-width: 800px;
+}
