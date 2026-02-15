@@ -1,8 +1,8 @@
 title: ACWOL
 description: Core framework for conscience-led decision-making, disciplined Intellect mining, and human–AI co-evolution.
 
-# Important: No theme declared
-# Do NOT add: theme: minima
+# IMPORTANT: No theme declared
+# Do NOT add: theme:
 # Do NOT add: remote_theme:
 
 markdown: kramdown
@@ -13,6 +13,15 @@ kramdown:
 
 plugins:
   - jekyll-feed
+
+# 🔥 FORCE DEFAULT LAYOUT GLOBALLY
+defaults:
+  -
+    scope:
+      path: ""        # applies to all files
+      type: "pages"
+    values:
+      layout: "default"
 
 exclude:
   - README.md
