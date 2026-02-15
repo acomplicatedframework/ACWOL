@@ -1,27 +1,12 @@
 title: ACWOL
-description: Core framework for conscience-led decision-making, disciplined Intellect mining, and human–AI co-evolution.
-
-# IMPORTANT: No theme declared
-# Do NOT add: theme:
-# Do NOT add: remote_theme:
+description: A Complicated Way of Life
+baseurl: "/ACWOL"
+url: "https://acomplicatedframework.github.io"
 
 markdown: kramdown
-highlighter: rouge
+theme: null
 
-kramdown:
-  input: GFM
+permalink: pretty
 
 plugins:
   - jekyll-feed
-
-# 🔥 FORCE DEFAULT LAYOUT GLOBALLY
-defaults:
-  -
-    scope:
-      path: ""        # applies to all files
-      type: "pages"
-    values:
-      layout: "default"
-
-exclude:
-  - README.md
