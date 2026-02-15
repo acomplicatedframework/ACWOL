@@ -4,65 +4,64 @@
 @import "{{ site.theme }}";
 
 /* ============================================
-   ACWOL TERMINAL MODE
+   ACWOL TERMINAL MODE v2
 ============================================ */
 
-/* Base Terminal Body */
+/* Base Terminal */
 
 body {
   background-color: #000000;
   color: #00ff00;
   font-family: "Courier New", Courier, monospace;
-  line-height: 1.6;
+  line-height: 1.8;
   letter-spacing: 1px;
-  text-shadow: 0 0 5px #00ff00;
-  animation: flicker 0.15s infinite;
+  padding: 40px;
+  text-shadow: 0 0 6px rgba(0,255,0,0.7);
+  animation: flicker 0.18s infinite;
 }
 
-/* Subtle CRT Flicker */
+/* Subtle Flicker */
 
 @keyframes flicker {
-  0%   { opacity: 0.98; }
+  0%   { opacity: 0.985; }
   50%  { opacity: 1; }
   100% { opacity: 0.99; }
 }
 
-/* CRT Scanlines Overlay */
+/* CRT Scanlines */
 
 body::before {
   content: "";
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   pointer-events: none;
   background: repeating-linear-gradient(
     to bottom,
-    rgba(0, 255, 0, 0.05) 0px,
-    rgba(0, 255, 0, 0.05) 1px,
+    rgba(0, 255, 0, 0.04) 0px,
+    rgba(0, 255, 0, 0.04) 1px,
     transparent 1px,
     transparent 3px
   );
   z-index: 9999;
 }
 
-/* Remove Light Theme Elements */
+/* Remove Light Theme Artifacts */
 
 .site-header,
 .site-footer,
 .page-header {
-  background: #000000 !important;
+  background: #000 !important;
   border: none !important;
 }
 
-/* Headings Styled Like Commands */
+/* Headings as Commands */
 
-h1, h2, h3, h4, h5, h6 {
-  color: #00ff00;
+h1, h2, h3 {
   font-weight: normal;
   text-transform: lowercase;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 
 h1::before,
@@ -72,60 +71,66 @@ h3::before {
   color: #00ff00;
 }
 
+/* Reduce glow on paragraphs */
+
+p {
+  text-shadow: 0 0 4px rgba(0,255,0,0.5);
+}
+
 /* Terminal Links */
 
 a {
   color: #00ff00 !important;
   text-decoration: none;
-  text-shadow: 0 0 5px #00ff00;
+  transition: 0.2s ease;
 }
 
 a:hover {
-  color: #ffffff !important;
-  text-shadow: 0 0 8px #00ff00;
+  color: #b6ffb6 !important;
+  text-shadow: 0 0 10px #00ff00;
 }
 
-/* Remove Bullet Dots */
+/* Remove Bullets */
 
 ul {
   list-style: none;
   padding-left: 0;
+  margin-left: 20px;
 }
 
 li {
-  margin: 10px 0;
+  margin: 12px 0;
 }
 
 li::before {
   content: "> ";
-  color: #00ff00;
+  margin-right: 8px;
 }
 
-/* Fake Boot Line at Top (Optional Look) */
-
-body::after {
-  content: "\A\A> _";
-  white-space: pre;
-  display: block;
-  margin-top: 60px;
-  animation: blink 1s infinite;
-}
-
-/* Blinking Cursor */
-
-@keyframes blink {
-  0%   { opacity: 1; }
-  50%  { opacity: 0; }
-  100% { opacity: 1; }
-}
-
-/* Subtle Page Fade-In */
+/* Boot Fade */
 
 html {
-  animation: bootfade 0.8s ease-in;
+  animation: bootfade 0.7s ease-in;
 }
 
 @keyframes bootfade {
   from { opacity: 0; }
   to { opacity: 1; }
+}
+
+/* Cursor at Bottom */
+
+body::after {
+  content: "\A\A> _";
+  white-space: pre;
+  display: block;
+  margin-top: 80px;
+  font-weight: bold;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%   { opacity: 1; }
+  50%  { opacity: 0; }
+  100% { opacity: 1; }
 }
