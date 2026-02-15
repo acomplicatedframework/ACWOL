@@ -1,62 +1,61 @@
 ---
 ---
 
+@import "{{ site.theme }}";
+
 /* ===============================
-   ACWOL TERMINAL OS v1.1
+   ACWOL TERMINAL OS – HARD OVERRIDE
    =============================== */
 
-body {
-  background-color: #000000 !important;
+/* GLOBAL RESET */
+html, body {
+  background: #000000 !important;
   color: #00ff00 !important;
   font-family: "Courier New", monospace !important;
-  line-height: 1.7;
-  margin: 50px;
   font-size: 18px;
-  text-shadow: 0 0 4px #00ff00;
+  line-height: 1.7;
+  text-shadow: 0 0 5px #00ff00;
 }
 
-/* ===============================
-   BOOT MESSAGE PER PAGE
-   =============================== */
-
-h1::before {
-  content: "> loading module...\A\A";
-  white-space: pre;
-  color: #00ff00;
+/* Remove layout container background */
+.wrapper,
+.page-content,
+.site-header,
+.site-footer,
+.site-nav,
+.menu-icon,
+.nav-trigger {
+  background: #000000 !important;
+  border: none !important;
+  display: none !important;
 }
 
-/* ===============================
-   TERMINAL PROMPT STYLE LINKS
-   =============================== */
-
-a {
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
   color: #00ff00 !important;
-  text-decoration: none;
+  font-weight: normal !important;
 }
 
+/* FORCE ALL LINKS GREEN */
+a,
+a:visited,
+a:hover,
+a:active {
+  color: #00ff00 !important;
+  text-decoration: underline !important;
+}
+
+/* Make links look like commands */
 a::before {
   content: "> ";
 }
 
-a:hover {
-  color: #66ff66 !important;
+/* Lists spacing */
+li {
+  margin-bottom: 10px;
 }
 
-/* ===============================
-   REMOVE NAVIGATION COMPLETELY
-   =============================== */
-
-.site-nav,
-.menu-icon,
-.site-header,
-.site-footer {
-  display: none !important;
-}
-
-/* ===============================
-   CRT GLOW EFFECT
-   =============================== */
-
+/* CRT Scanlines */
 body::after {
   content: "";
   position: fixed;
@@ -67,35 +66,17 @@ body::after {
   pointer-events: none;
   background: repeating-linear-gradient(
     to bottom,
-    rgba(0, 255, 0, 0.03),
-    rgba(0, 255, 0, 0.03) 1px,
+    rgba(0,255,0,0.03),
+    rgba(0,255,0,0.03) 1px,
     transparent 1px,
     transparent 3px
   );
 }
 
-/* ===============================
-   HEADINGS
-   =============================== */
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: normal;
-  color: #00ff00 !important;
-}
-
-/* ===============================
-   LISTS
-   =============================== */
-
-li {
-  margin-bottom: 10px;
-}
-
-/* ===============================
-   REMOVE SHADOWS + BORDERS
-   =============================== */
-
-* {
-  box-shadow: none !important;
-  border-radius: 0 !important;
+/* Boot Message */
+body::before {
+  content: "ACWOL SYSTEM INITIALIZED\A\A";
+  white-space: pre;
+  display: block;
+  margin-bottom: 25px;
 }
