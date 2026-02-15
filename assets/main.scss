@@ -4,26 +4,51 @@
 @import "{{ site.theme }}";
 
 /* ============================================
-   ACWOL TERMINAL SYSTEM – NO HAMBURGER
+   HARD RESET
 ============================================ */
 
-/* GLOBAL TERMINAL RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+
+/* ============================================
+   TERMINAL BASE
+============================================ */
 
 html, body {
   background: #000000 !important;
   color: #00ff00 !important;
-  font-family: "Courier New", Courier, monospace !important;
-  line-height: 1.7;
+  font-family: "Courier New", monospace !important;
+  line-height: 1.8;
   text-transform: lowercase;
   overflow-x: hidden;
-  animation: flicker 0.15s infinite;
 }
 
-/* Remove modern UI styling */
+/* Remove all white theme areas */
 
-* {
-  border-radius: 0 !important;
-  box-shadow: none !important;
+header,
+.site-header,
+.site-nav,
+.wrapper,
+.page-content,
+.post,
+.post-content,
+main,
+footer,
+.site-footer {
+  background: transparent !important;
+  border: none !important;
+}
+
+/* Remove navigation completely */
+
+.site-nav,
+.nav-trigger,
+.menu-icon {
+  display: none !important;
 }
 
 /* ============================================
@@ -33,15 +58,12 @@ html, body {
 body::before {
   content: "";
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   pointer-events: none;
   background: repeating-linear-gradient(
     to bottom,
-    rgba(0,255,0,0.05) 0px,
-    rgba(0,255,0,0.05) 1px,
+    rgba(0,255,0,0.04) 0px,
+    rgba(0,255,0,0.04) 1px,
     transparent 2px,
     transparent 4px
   );
@@ -53,160 +75,3 @@ body::before {
 ============================================ */
 
 body, h1, h2, h3, h4, h5, h6, p, li, a {
-  text-shadow: 0 0 6px #00ff00;
-}
-
-/* ============================================
-   HEADINGS AS PROMPTS
-============================================ */
-
-h1::before,
-h2::before,
-h3::before {
-  content: "> ";
-}
-
-h1, h2, h3, h4, h5, h6 {
-  color: #00ff00 !important;
-  font-weight: normal;
-}
-
-/* ============================================
-   LINKS
-============================================ */
-
-a {
-  color: #00ff00 !important;
-  text-decoration: none;
-}
-
-a:hover {
-  background: #001100;
-}
-
-/* ============================================
-   LISTS
-============================================ */
-
-ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-li::before {
-  content: "> ";
-}
-
-/* ============================================
-   REMOVE HAMBURGER
-============================================ */
-
-/* Hide mobile nav toggle */
-.nav-trigger,
-.menu-icon,
-.site-nav .menu-icon,
-.site-nav input[type="checkbox"] {
-  display: none !important;
-}
-
-/* Force nav always visible */
-.site-nav {
-  display: block !important;
-  position: static !important;
-  background: #000000 !important;
-  border-bottom: 1px solid #003300 !important;
-  padding: 15px 0;
-}
-
-/* Nav list horizontal */
-
-.site-nav ul,
-.site-nav .page-links {
-  display: flex !important;
-  flex-wrap: wrap;
-  gap: 25px;
-  justify-content: center;
-  align-items: center;
-  background: #000000 !important;
-  border: none !important;
-}
-
-/* Nav items */
-
-.site-nav li {
-  margin: 0;
-}
-
-.site-nav a {
-  color: #00ff00 !important;
-  text-shadow: 0 0 6px #00ff00;
-}
-
-.site-nav a::before {
-  content: "> ";
-}
-
-.site-nav a:hover {
-  background: #001100 !important;
-}
-
-/* ============================================
-   REMOVE WHITE WRAPPERS
-============================================ */
-
-.page-content,
-.wrapper,
-.post,
-.post-content,
-main,
-header,
-.site-header {
-  background: transparent !important;
-}
-
-/* ============================================
-   FOOTER
-============================================ */
-
-footer,
-.site-footer {
-  background: #000000 !important;
-  border-top: 1px solid #003300 !important;
-  color: #00ff00 !important;
-}
-
-/* ============================================
-   SCROLLBAR
-============================================ */
-
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: #000000;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #003300;
-}
-
-/* ============================================
-   CRT FLICKER
-============================================ */
-
-@keyframes flicker {
-  0% { opacity: 0.97; }
-  50% { opacity: 1; }
-  100% { opacity: 0.98; }
-}
-
-/* ============================================
-   CENTER CONTENT
-============================================ */
-
-.wrapper {
-  max-width: 900px;
-  margin: auto;
-  padding: 40px;
-}
