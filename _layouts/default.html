@@ -5,7 +5,6 @@
 <title>{{ page.title }}</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Pixel Block Font -->
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 
 <style>
@@ -36,16 +35,15 @@ body::after {
   z-index: 9999;
 }
 
-/* ACWOL Pixel Header */
+/* Pixel Header */
 .super-hero {
   font-family: 'Press Start 2P', monospace;
   font-size: clamp(3rem, 10vw, 6rem);
   text-transform: uppercase;
   text-align: left;
   line-height: 1.2;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   color: #00ff00;
-
   text-shadow:
     0 0 10px #00ff00,
     0 0 25px #00ff00,
@@ -53,10 +51,12 @@ body::after {
     0 0 100px #00ff00;
 }
 
-/* Boot text */
-.boot {
-  font-size: 0.9rem;
-  opacity: 0.7;
+/* Official Description */
+.tagline {
+  max-width: 900px;
+  font-size: 0.95rem;
+  opacity: 0.8;
+  margin-bottom: 50px;
 }
 
 hr {
@@ -66,16 +66,10 @@ hr {
   opacity: 0.5;
 }
 
-/* Section headings */
-h2, h3 {
-  margin-top: 60px;
-}
-
 h2::before {
   content: "> ";
 }
 
-/* Links */
 a {
   color: #00ff00;
   text-decoration: none;
@@ -85,7 +79,6 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Remove bullet styling */
 ul {
   list-style: none;
   padding-left: 0;
@@ -95,7 +88,6 @@ li::before {
   content: "> ";
 }
 
-/* Fade In */
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
@@ -109,9 +101,10 @@ li::before {
   ACWOL
 </div>
 
-<div class="boot">initializing acwol system...</div>
-<div class="boot">loading conscience protocols...</div>
-<div class="boot">intellect mining protocol loading...</div>
+<div class="tagline">
+Originally developed in 2009 ACWOL is the core framework for conscience-led decision-making, disciplined Intellect mining, and human–AI co-evolution. All rights reserved to Leo Evolves:
+<a href="https://a.co/d/03wWeqG5" target="_blank">https://a.co/d/03wWeqG5</a>
+</div>
 
 <hr>
 
