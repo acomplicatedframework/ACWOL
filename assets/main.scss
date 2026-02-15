@@ -4,75 +4,76 @@
 @import "{{ site.theme }}";
 
 /* ============================================
-   ACWOL TERMINAL MODE — FULL SYSTEM
+   ACWOL TERMINAL MODE – FULL SYSTEM OVERRIDE
 ============================================ */
 
-/* Base terminal environment */
+/* GLOBAL RESET */
 
-body {
-  background-color: #000000 !important;
+html, body {
+  background: #000000 !important;
   color: #00ff00 !important;
   font-family: "Courier New", Courier, monospace !important;
   line-height: 1.7;
-  font-size: 16px;
-  max-width: 900px;
-  margin: auto;
-  text-shadow: 0 0 6px #00ff00;
-  animation: flicker 0.15s infinite alternate;
+  text-transform: lowercase;
+  overflow-x: hidden;
 }
 
-/* Subtle CRT flicker */
+/* Remove all modern UI styling */
 
-@keyframes flicker {
-  from { opacity: 0.98; }
-  to { opacity: 1; }
+* {
+  border-radius: 0 !important;
+  box-shadow: none !important;
 }
 
-/* Scanline overlay */
+/* ============================================
+   CRT SCANLINES
+============================================ */
 
 body::before {
   content: "";
   position: fixed;
-  inset: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
   background: repeating-linear-gradient(
     to bottom,
-    rgba(0, 255, 0, 0.04),
-    rgba(0, 255, 0, 0.04) 1px,
-    transparent 1px,
-    transparent 3px
+    rgba(0,255,0,0.05) 0px,
+    rgba(0,255,0,0.05) 1px,
+    transparent 2px,
+    transparent 4px
   );
-  pointer-events: none;
   z-index: 9999;
 }
 
-/* Remove light theme elements */
+/* ============================================
+   TEXT GLOW
+============================================ */
 
-.site-header,
-.site-footer,
-.page-header {
-  background: #000000 !important;
-  border: none !important;
+body, h1, h2, h3, h4, h5, h6, p, li, a {
+  text-shadow: 0 0 6px #00ff00;
 }
 
-/* Headings */
-
-h1, h2, h3, h4, h5, h6 {
-  color: #00ff00 !important;
-  font-weight: normal;
-  text-transform: lowercase;
-  letter-spacing: 2px;
-  margin-top: 60px;
-}
-
-/* Command prompt before headings */
+/* ============================================
+   HEADINGS AS PROMPTS
+============================================ */
 
 h1::before,
-h2::before {
+h2::before,
+h3::before {
   content: "> ";
   color: #00ff00;
 }
 
-/* Links */
+h1, h2, h3, h4, h5, h6 {
+  color: #00ff00 !important;
+  font-weight: normal;
+}
+
+/* ============================================
+   LINKS
+============================================ */
 
 a {
   color: #00ff00 !important;
@@ -80,72 +81,116 @@ a {
 }
 
 a:hover {
-  text-shadow: 0 0 12px #00ff00;
+  background: #001100;
 }
 
-/* Lists styled as terminal commands */
+/* ============================================
+   LIST STYLING
+============================================ */
 
 ul {
   list-style: none;
   padding-left: 0;
 }
 
-ul li::before {
+li::before {
   content: "> ";
   color: #00ff00;
 }
 
-/* Paragraph spacing */
+/* ============================================
+   NAVIGATION BAR FIX
+============================================ */
 
-p {
-  margin-bottom: 18px;
-  color: #00dd00;
-  text-shadow: 0 0 3px rgba(0,255,0,0.4);
+header,
+.site-header,
+.site-nav,
+nav,
+.navigation,
+.menu,
+.dropdown,
+.page-links {
+  background: #000000 !important;
+  border-bottom: 1px solid #003300 !important;
 }
 
-/* List readability */
+/* Mobile dropdown */
 
-li {
-  line-height: 1.9;
-  padding-left: 10px;
+.site-nav ul,
+.site-nav div,
+.page-links {
+  background: #000000 !important;
+  border: 1px solid #00ff00 !important;
 }
 
-/* Strong emphasis */
-
-strong {
-  color: #b6ffb6;
-  text-shadow: 0 0 8px #00ff00;
+.site-nav a {
+  color: #00ff00 !important;
+  text-shadow: 0 0 6px #00ff00;
 }
 
-/* Blockquotes look like system logs */
-
-blockquote {
-  border-left: 2px solid #00ff00;
-  padding-left: 15px;
-  color: #66ff66;
+.site-nav a:hover {
+  background: #001100 !important;
 }
 
-/* Code blocks */
+/* ============================================
+   REMOVE WHITE CONTENT WRAPPERS
+============================================ */
 
-pre, code {
-  background: #001100;
-  color: #00ff00;
-  padding: 6px;
-  border: 1px solid #00ff00;
-  text-shadow: none;
+.page-content,
+.wrapper,
+.post,
+.post-content,
+main {
+  background: transparent !important;
 }
 
-/* Optional loading banner at top of homepage */
+/* ============================================
+   FOOTER
+============================================ */
 
-h1:first-of-type::before {
-  content: "> loading module...\A";
-  white-space: pre;
-  display: block;
-  margin-bottom: 20px;
+footer,
+.site-footer {
+  background: #000000 !important;
+  border-top: 1px solid #003300 !important;
+  color: #00ff00 !important;
 }
 
-/* Smooth scrolling */
+/* ============================================
+   SCROLLBAR (optional but immersive)
+============================================ */
 
-html {
-  scroll-behavior: smooth;
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #003300;
+}
+
+/* ============================================
+   SUBTLE CRT FLICKER
+============================================ */
+
+@keyframes flicker {
+  0% { opacity: 0.97; }
+  50% { opacity: 1; }
+  100% { opacity: 0.98; }
+}
+
+body {
+  animation: flicker 0.15s infinite;
+}
+
+/* ============================================
+   OPTIONAL: CENTER CONTENT LIKE TERMINAL
+============================================ */
+
+.wrapper {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px;
 }
