@@ -169,6 +169,13 @@ https://x.com/acomplicatedway
 </a>
 </p>
 
+<p>
+Rent-a-Human:  
+<a href="https://rentahuman.ai/humans/O0WquYtaSl8ZzRLmM2RK" target="_blank">
+https://rentahuman.ai/humans/O0WquYtaSl8ZzRLmM2RK
+</a>
+</p>
+
 <hr>
 
 <div class="section-header">
