@@ -184,7 +184,8 @@ https://x.com/acomplicatedway
 <p>
 Rent A Human:  
 <a href="https://rentahuman.ai/humans/O0WquYtaSl8ZzRLmM2RK" target="_blank">
-https://rentahuman.ai/humans/O0WquYtaSl8ZzRLmM2RK
+https://rentahuman.ai/humans/
+O0WquYtaSl8ZzRLmM2RK
 </a>
 </p>
 
