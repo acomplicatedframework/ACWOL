@@ -1,0 +1,55 @@
+---
+---
+
+@import "minima";
+
+/* ===== TERMINAL MODE ===== */
+
+body {
+  background-color: #000000;
+  color: #00ff66;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #00ff66;
+  font-weight: normal;
+}
+
+/* Links */
+a {
+  color: #00ff99;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Remove white containers */
+.wrapper {
+  background: transparent;
+}
+
+/* Remove footer */
+.site-footer {
+  display: none;
+}
+
+/* Terminal-style bullet */
+ul {
+  list-style-type: none;
+}
+
+ul li::before {
+  content: "> ";
+  color: #00ff66;
+}
+
+/* Subtle glow */
+body {
+  text-shadow: 0 0 5px #00ff66;
+}
