@@ -1,10 +1,18 @@
 title: ACWOL
-description: Conscience-led systems and Intellect mining framework
-theme: minima
+description: Core framework for conscience-led decision-making, disciplined Intellect mining, and human–AI co-evolution.
+
+# Important: No theme declared
+# Do NOT add: theme: minima
+# Do NOT add: remote_theme:
 
 markdown: kramdown
-permalink: pretty
+highlighter: rouge
 
-sass:
-  sass_dir: assets
-  style: compressed
+kramdown:
+  input: GFM
+
+plugins:
+  - jekyll-feed
+
+exclude:
+  - README.md
