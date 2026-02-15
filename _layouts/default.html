@@ -1,115 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>{{ page.title }}</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-
-<style>
-body {
-  background: #000;
-  color: #00ff00;
-  font-family: "Courier New", monospace;
-  margin: 0;
-  padding: 60px 40px;
-  max-width: 1200px;
-  line-height: 1.8;
-  animation: fadeIn 1.5s ease-in;
-}
-
-/* Scanlines */
-body::after {
-  content: "";
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  background: repeating-linear-gradient(
-    to bottom,
-    rgba(0,255,0,0.04) 0px,
-    rgba(0,255,0,0.04) 1px,
-    transparent 2px,
-    transparent 4px
-  );
-  z-index: 9999;
-}
-
-/* Pixel Header */
-.super-hero {
-  font-family: 'Press Start 2P', monospace;
-  font-size: clamp(3rem, 10vw, 6rem);
-  text-transform: uppercase;
-  text-align: left;
-  line-height: 1.2;
-  margin-bottom: 40px;
-  color: #00ff00;
-  text-shadow:
-    0 0 10px #00ff00,
-    0 0 25px #00ff00,
-    0 0 50px #00ff00,
-    0 0 100px #00ff00;
-}
-
-/* Official Description */
-.tagline {
-  max-width: 900px;
-  font-size: 0.95rem;
-  opacity: 0.8;
-  margin-bottom: 50px;
-}
-
-hr {
-  border: none;
-  border-top: 1px solid #00ff00;
-  margin: 40px 0;
-  opacity: 0.5;
-}
-
-h2::before {
-  content: "> ";
-}
-
-a {
-  color: #00ff00;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-li::before {
-  content: "> ";
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-</style>
+  <meta charset="UTF-8">
+  <title>{{ page.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-
 <body>
-
-<div class="super-hero">
-  ACWOL
-</div>
-
-<div class="tagline">
-0x1E57F7341F4C283F3CbeC0eCc05d7f087f1fE594
-Originally developed in 2009 ACWOL is the core framework for conscience-led decision-making, disciplined Intellect mining, and human–AI co-evolution. All rights reserved to Leo Evolves:
-<a href="https://a.co/d/03wWeqG5" target="_blank">https://a.co/d/03wWeqG5</a>
-</div>
-
-<hr>
-
-{{ content }}
-
+  {{ content }}
 </body>
 </html>
