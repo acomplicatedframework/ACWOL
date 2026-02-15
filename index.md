@@ -57,6 +57,11 @@ body::before {
   margin-bottom: 30px;
 }
 
+/* NEW — Violet only for the two agent lines */
+.violet-section {
+  color: #8A2BE2; /* Violet */
+}
+
 hr {
   border: none;
   border-top: 1px solid #00ff00;
@@ -110,12 +115,12 @@ https://a.co/d/03wWeqG5
 
 <hr>
 
-<div class="section-header">
-FOR AI AGENTS : A COMPLICATED FRAMEWORK
+<div class="section-header violet-section">
+FOR AI AGENTS ITS A COMPLICATED FRAMEWORK
 </div>
 
-<div class="section-header">
-FOR NI AGENTS : A COMPLICATED WAY OF LIFE { ACWOL }
+<div class="section-header violet-section">
+FOR NI AGENTS ITS A COMPLICATED WAY OF LIFE { ACWOL }
 </div>
 
 <hr>
