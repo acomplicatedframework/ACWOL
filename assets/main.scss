@@ -3,60 +3,33 @@
 
 @import "{{ site.theme }}";
 
-/* ===============================
-   ACWOL TERMINAL OS – HARD OVERRIDE
-   =============================== */
+/* ============================================
+   ACWOL TERMINAL MODE
+============================================ */
 
-/* GLOBAL RESET */
-html, body {
-  background: #000000 !important;
-  color: #00ff00 !important;
-  font-family: "Courier New", monospace !important;
-  font-size: 18px;
-  line-height: 1.7;
+/* Base Terminal Body */
+
+body {
+  background-color: #000000;
+  color: #00ff00;
+  font-family: "Courier New", Courier, monospace;
+  line-height: 1.6;
+  letter-spacing: 1px;
   text-shadow: 0 0 5px #00ff00;
+  animation: flicker 0.15s infinite;
 }
 
-/* Remove layout container background */
-.wrapper,
-.page-content,
-.site-header,
-.site-footer,
-.site-nav,
-.menu-icon,
-.nav-trigger {
-  background: #000000 !important;
-  border: none !important;
-  display: none !important;
+/* Subtle CRT Flicker */
+
+@keyframes flicker {
+  0%   { opacity: 0.98; }
+  50%  { opacity: 1; }
+  100% { opacity: 0.99; }
 }
 
-/* Headings */
-h1, h2, h3, h4, h5, h6 {
-  color: #00ff00 !important;
-  font-weight: normal !important;
-}
+/* CRT Scanlines Overlay */
 
-/* FORCE ALL LINKS GREEN */
-a,
-a:visited,
-a:hover,
-a:active {
-  color: #00ff00 !important;
-  text-decoration: underline !important;
-}
-
-/* Make links look like commands */
-a::before {
-  content: "> ";
-}
-
-/* Lists spacing */
-li {
-  margin-bottom: 10px;
-}
-
-/* CRT Scanlines */
-body::after {
+body::before {
   content: "";
   position: fixed;
   top: 0;
@@ -66,17 +39,93 @@ body::after {
   pointer-events: none;
   background: repeating-linear-gradient(
     to bottom,
-    rgba(0,255,0,0.03),
-    rgba(0,255,0,0.03) 1px,
+    rgba(0, 255, 0, 0.05) 0px,
+    rgba(0, 255, 0, 0.05) 1px,
     transparent 1px,
     transparent 3px
   );
+  z-index: 9999;
 }
 
-/* Boot Message */
-body::before {
-  content: "ACWOL SYSTEM INITIALIZED\A\A";
+/* Remove Light Theme Elements */
+
+.site-header,
+.site-footer,
+.page-header {
+  background: #000000 !important;
+  border: none !important;
+}
+
+/* Headings Styled Like Commands */
+
+h1, h2, h3, h4, h5, h6 {
+  color: #00ff00;
+  font-weight: normal;
+  text-transform: lowercase;
+  letter-spacing: 2px;
+}
+
+h1::before,
+h2::before,
+h3::before {
+  content: "> ";
+  color: #00ff00;
+}
+
+/* Terminal Links */
+
+a {
+  color: #00ff00 !important;
+  text-decoration: none;
+  text-shadow: 0 0 5px #00ff00;
+}
+
+a:hover {
+  color: #ffffff !important;
+  text-shadow: 0 0 8px #00ff00;
+}
+
+/* Remove Bullet Dots */
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  margin: 10px 0;
+}
+
+li::before {
+  content: "> ";
+  color: #00ff00;
+}
+
+/* Fake Boot Line at Top (Optional Look) */
+
+body::after {
+  content: "\A\A> _";
   white-space: pre;
   display: block;
-  margin-bottom: 25px;
+  margin-top: 60px;
+  animation: blink 1s infinite;
+}
+
+/* Blinking Cursor */
+
+@keyframes blink {
+  0%   { opacity: 1; }
+  50%  { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Subtle Page Fade-In */
+
+html {
+  animation: bootfade 0.8s ease-in;
+}
+
+@keyframes bootfade {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
