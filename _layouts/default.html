@@ -43,7 +43,6 @@
     .content-wrapper {
       position: relative;
       z-index: 1;
-      max-width: 1000px;
     }
 
     h1.hero {
@@ -80,27 +79,9 @@
       margin: 60px 0;
     }
 
-    /* --- DISCUSSION SECTION --- */
-
+    /* Discussion container spacing only */
     .discussion-section {
-      margin-top: 140px;
-    }
-
-    .discussion-title {
-      font-size: 95px;
-      font-weight: bold;
-      text-transform: uppercase;
-      letter-spacing: 4px;
-      text-shadow:
-        0 0 10px #00ff00,
-        0 0 20px #00ff00,
-        0 0 40px #00ff00,
-        0 0 80px #00ff00;
-      margin-bottom: 60px;
-    }
-
-    .discussion-title::before {
-      content: "> ";
+      margin-top: 70px;
     }
 
   </style>
@@ -112,11 +93,11 @@
     {{ content }}
 
     <div class="discussion-section">
+
       <hr>
 
-      <div class="discussion-title">
-        SYSTEM DISCUSSION LOG
-      </div>
+      <!-- Uses EXACT same styling as LICENSE because it's h2 -->
+      <h2>> SYSTEM DISCUSSION LOG</h2>
 
       <script src="https://giscus.app/client.js"
         data-repo="acomplicatedframework/ACWOL"
@@ -131,12 +112,4 @@
         data-theme="transparent_dark"
         data-lang="en"
         data-loading="lazy"
-        crossorigin="anonymous"
-        async>
-      </script>
-
-    </div>
-
-  </div>
-</body>
-</html>
+        crossorigin="anonymous
