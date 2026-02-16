@@ -43,6 +43,7 @@
     .content-wrapper {
       position: relative;
       z-index: 1;
+      max-width: 900px;
     }
 
     h1.hero {
@@ -70,7 +71,6 @@
     p {
       font-size: 18px;
       line-height: 1.8;
-      max-width: 900px;
     }
 
     hr {
@@ -78,12 +78,64 @@
       border-top: 1px solid #00ff00;
       margin: 60px 0;
     }
+
+    /* ===== DISCUSSION TERMINAL SECTION ===== */
+
+    .discussion-section {
+      margin-top: 120px;
+      padding-top: 60px;
+      border-top: 1px solid #00ff00;
+    }
+
+    .discussion-title {
+      font-size: 28px;
+      margin-bottom: 40px;
+      text-shadow: 0 0 8px #00ff00;
+      letter-spacing: 2px;
+    }
+
+    /* Remove giscus frame background so it blends */
+    .giscus-frame {
+      background: transparent !important;
+    }
+
   </style>
 </head>
 
 <body>
+
   <div class="content-wrapper">
+    
     {{ content }}
+
+    <!-- TERMINAL DISCUSSION AREA -->
+    <div class="discussion-section">
+      <div class="discussion-title">
+        > SYSTEM DISCUSSION LOG
+      </div>
+
+      <div class="giscus"></div>
+    </div>
+
   </div>
+
+  <!-- GISCUS SCRIPT (CORRECTLY PLACED) -->
+  <script src="https://giscus.app/client.js"
+          data-repo="acomplicatedframework/ACWOL"
+          data-repo-id="R_kgDORKNoSg"
+          data-category="General"
+          data-category-id="DIC_kwDORKNoSs4C2i0z"
+          data-mapping="pathname"
+          data-strict="0"
+          data-reactions-enabled="1"
+          data-emit-metadata="0"
+          data-input-position="bottom"
+          data-theme="transparent_dark"
+          data-lang="en"
+          data-loading="lazy"
+          crossorigin="anonymous"
+          async>
+  </script>
+
 </body>
 </html>
