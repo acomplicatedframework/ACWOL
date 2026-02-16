@@ -1,0 +1,71 @@
+:root {
+
+  /* BACKGROUND */
+  --color-canvas-default: #000000;
+  --color-canvas-overlay: #000000;
+
+  /* TEXT */
+  --color-fg-default: #00ff00;
+  --color-fg-muted: #00ff00;
+  --color-fg-subtle: #00ff00;
+  --color-fg-on-emphasis: #00ff00;
+
+  /* BORDERS */
+  --color-border-default: #00ff00;
+  --color-border-muted: #00ff00;
+
+  /* BUTTONS */
+  --color-btn-bg: #000000;
+  --color-btn-border: #00ff00;
+  --color-btn-text: #00ff00;
+
+  --color-btn-primary-bg: #003300;
+  --color-btn-primary-border: #00ff00;
+  --color-btn-primary-text: #00ff00;
+
+  /* INPUT */
+  --color-input-bg: #000000;
+  --color-input-border: #00ff00;
+
+  /* LINKS */
+  --color-accent-fg: #00ff00;
+  --color-accent-emphasis: #00ff00;
+
+  /* Fix faded gray text */
+  --color-scale-gray-7: #00ff00;
+  --color-scale-gray-6: #00ff00;
+  --color-scale-gray-5: #00ff00;
+}
+
+/* FORCE TERMINAL LOOK */
+.giscus,
+.giscus * {
+  font-family: "Courier New", monospace !important;
+}
+
+/* Textareas + inputs */
+textarea,
+input {
+  background: #000000 !important;
+  color: #00ff00 !important;
+  border: 1px solid #00ff00 !important;
+}
+
+/* Buttons */
+button {
+  background: #000000 !important;
+  color: #00ff00 !important;
+  border: 1px solid #00ff00 !important;
+}
+
+/* Primary button darker */
+button.btn-primary {
+  background: #003300 !important;
+}
+
+/* Hover glow */
+button:hover,
+textarea:focus,
+input:focus {
+  box-shadow: 0 0 8px #00ff00 !important;
+}
