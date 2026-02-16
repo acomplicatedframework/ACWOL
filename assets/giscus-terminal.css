@@ -1,73 +1,143 @@
-:root {
-  --color-canvas-default: #000000;
-  --color-canvas-overlay: #000000;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  --color-border-default: #00ff00;
-  --color-border-muted: #00ff00;
-  --color-neutral-muted: #001a00;
+  <!-- Arcade Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 
-  --color-fg-default: #00ff00;
-  --color-fg-muted: #00ff00;
-  --color-fg-subtle: #00ff00;
-  --color-fg-on-emphasis: #00ff00;
-  --color-accent-fg: #00ff00;
+  <style>
+    body {
+      background-color: #000000;
+      color: #00ff00;
+      font-family: "Courier New", monospace;
+      margin: 0;
+      padding: 60px 40px;
+      opacity: 0;
+      animation: fadeIn 1.5s ease forwards;
+      position: relative;
+      overflow-x: hidden;
+    }
 
-  --color-scale-gray-7: #00ff00;
-  --color-scale-gray-6: #00ff00;
-  --color-scale-gray-5: #00ff00;
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
 
-  --color-accent-emphasis: #00ff00;
-  --color-accent-muted: #003300;
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: repeating-linear-gradient(
+        to bottom,
+        rgba(0,255,0,0.05) 0px,
+        rgba(0,255,0,0.05) 1px,
+        transparent 2px,
+        transparent 4px
+      );
+      pointer-events: none;
+      z-index: 0;
+    }
 
-  --color-btn-bg: #000000;
-  --color-btn-border: #00ff00;
-  --color-btn-text: #00ff00;
+    .content-wrapper {
+      position: relative;
+      z-index: 1;
+      max-width: 1000px;
+    }
 
-  --color-btn-primary-bg: #003300;
-  --color-btn-primary-border: #00ff00;
-  --color-btn-primary-text: #00ff00;
+    h1.hero {
+      font-size: 95px;
+      font-weight: bold;
+      text-shadow:
+        0 0 10px #00ff00,
+        0 0 20px #00ff00,
+        0 0 40px #00ff00,
+        0 0 80px #00ff00;
+      margin-bottom: 40px;
+    }
 
-  --color-input-bg: #000000;
-  --color-input-border: #00ff00;
+    h2 {
+      font-family: 'Press Start 2P', cursive;
+      font-size: 40px;
+      margin-top: 70px;
+      margin-bottom: 40px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
 
-  --color-focus-border: #00ff00;
-}
+    p {
+      font-size: 18px;
+      line-height: 1.8;
+      max-width: 900px;
+    }
 
-/* HARD FORCE BACKGROUND */
-html, body {
-  background: #000000 !important;
-}
+    hr {
+      border: none;
+      border-top: 1px solid #00ff00;
+      margin: 60px 0;
+    }
 
-/* FORCE EVERYTHING GREEN */
-* {
-  color: #00ff00 !important;
-  border-color: #00ff00 !important;
-  background-color: transparent;
-}
+    /* SYSTEM DISCUSSION LOG */
+    .discussion-title {
+      font-family: 'Press Start 2P', cursive;
+      font-size: 40px;
+      margin-top: 70px;
+      margin-bottom: 40px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #a020f0;
+    }
 
-/* Inputs */
-textarea,
-input {
-  background: #000000 !important;
-  color: #00ff00 !important;
-  border: 1px solid #00ff00 !important;
-}
+    .discussion-title::before {
+      content: "> ";
+    }
 
-/* Buttons */
-button {
-  background: #000000 !important;
-  color: #00ff00 !important;
-  border: 1px solid #00ff00 !important;
-}
+    .giscus-container {
+      margin-top: 40px;
+    }
 
-/* Primary button darker */
-button.btn-primary {
-  background: #003300 !important;
-}
+  </style>
+</head>
 
-/* Focus glow */
-button:hover,
-textarea:focus,
-input:focus {
-  box-shadow: 0 0 8px #00ff00 !important;
-}
+<body>
+  <div class="content-wrapper">
+
+    {{ content }}
+
+    <hr>
+
+    <div class="discussion-title">
+      SYSTEM DISCUSSION LOG
+    </div>
+
+    <div class="giscus-container">
+      <div class="giscus"></div>
+    </div>
+
+  </div>
+
+  <!-- GISCUS SCRIPT MUST BE AFTER CONTENT -->
+  <script src="https://giscus.app/client.js"
+          data-repo="acomplicatedframework/ACWOL"
+          data-repo-id="R_kgDORKNoSg"
+          data-category="General"
+          data-category-id="DIC_kwDORKNoSs4C2i0z"
+          data-mapping="pathname"
+          data-strict="0"
+          data-reactions-enabled="1"
+          data-emit-metadata="0"
+          data-input-position="bottom"
+          data-theme="transparent_dark"
+          data-lang="en"
+          data-loading="lazy"
+          crossorigin="anonymous"
+          async>
+  </script>
+
+</body>
+</html>
+
