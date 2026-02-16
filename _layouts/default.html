@@ -5,6 +5,9 @@
   <title>{{ page.title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Arcade Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
   <style>
     body {
       background-color: #000000;
@@ -43,8 +46,10 @@
     .content-wrapper {
       position: relative;
       z-index: 1;
+      max-width: 1000px;
     }
 
+    /* MAIN HERO */
     h1.hero {
       font-size: 95px;
       font-weight: bold;
@@ -56,10 +61,14 @@
       margin-bottom: 40px;
     }
 
+    /* ARCADE HEADINGS */
     h2 {
+      font-family: 'Press Start 2P', cursive;
       font-size: 40px;
       margin-top: 70px;
-      text-shadow: 0 0 10px #00ff00;
+      margin-bottom: 40px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
     }
 
     h3 {
@@ -78,6 +87,26 @@
       border-top: 1px solid #00ff00;
       margin: 60px 0;
     }
+
+    /* SYSTEM DISCUSSION LOG (VIOLET ARCADE STYLE) */
+    .discussion-title {
+      font-family: 'Press Start 2P', cursive;
+      font-size: 40px;
+      margin-top: 70px;
+      margin-bottom: 40px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #a020f0; /* violet */
+    }
+
+    .discussion-title::before {
+      content: "> ";
+    }
+
+    .discussion-container {
+      margin-top: 40px;
+    }
+
   </style>
 </head>
 
@@ -88,25 +117,10 @@
 
     <hr>
 
-    <h2>&gt; SYSTEM DISCUSSION LOG</h2>
+    <div class="discussion-title">
+      SYSTEM DISCUSSION LOG
+    </div>
 
-    <script src="https://giscus.app/client.js"
-        data-repo="acomplicatedframework/ACWOL"
-        data-repo-id="R_kgDORKNoSg"
-        data-category="General"
-        data-category-id="DIC_kwDORKNoSs4C2i0z"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="transparent_dark"
-        data-lang="en"
-        data-loading="lazy"
-        crossorigin="anonymous"
-        async>
-    </script>
-
-  </div>
-</body>
-</html>
+    <div class="discussion-container">
+      <script src="https://giscus.app/client.js"
+        data-repo="acomplicatedframework/ACW
