@@ -1,18 +1,25 @@
 :root {
+  /* Background */
   --color-canvas-default: #000000;
   --color-canvas-overlay: #000000;
 
+  /* Borders */
   --color-border-default: #00ff00;
   --color-border-muted: #00ff00;
-
   --color-neutral-muted: #001a00;
 
+  /* Text */
   --color-fg-default: #00ff00;
   --color-fg-muted: #00ff00;
   --color-fg-subtle: #00ff00;
   --color-fg-on-emphasis: #00ff00;
   --color-accent-fg: #00ff00;
 
+  /* Links */
+  --color-accent-emphasis: #00ff00;
+  --color-accent-muted: #003300;
+
+  /* Buttons */
   --color-btn-bg: #000000;
   --color-btn-border: #00ff00;
   --color-btn-text: #00ff00;
@@ -21,31 +28,15 @@
   --color-btn-primary-border: #00ff00;
   --color-btn-primary-text: #00ff00;
 
+  /* Inputs */
   --color-input-bg: #000000;
   --color-input-border: #00ff00;
 
+  /* Focus */
   --color-focus-border: #00ff00;
-}
 
-/* FORCE EVERYTHING TERMINAL STYLE */
-
-.giscus,
-.giscus * {
-  color: #00ff00 !important;
-  border-color: #00ff00 !important;
-}
-
-/* Input + textarea fix */
-textarea,
-input {
-  background: #000000 !important;
-  color: #00ff00 !important;
-  border: 1px solid #00ff00 !important;
-}
-
-/* Buttons */
-button {
-  background: #000000 !important;
-  color: #00ff00 !important;
-  border: 1px solid #00ff00 !important;
+  /* NEW — this fixes faded comment text */
+  --color-scale-gray-7: #00ff00;
+  --color-scale-gray-6: #00ff00;
+  --color-scale-gray-5: #00ff00;
 }
