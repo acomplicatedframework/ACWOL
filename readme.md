@@ -147,4 +147,15 @@ If it does not, discard it without guilt.
 - `CONTRIBUTING-HUMANS.md` — Human contributors
 - `CONTRIBUTING_AI.md` — AI contributors
 - 
-- THANK YOU FOR YOUR ATTENTION TO THIS MATTER. 🟦
+## Governance
+
+ACWOL operates under a structured Code of Conduct and contribution protocol aligned with the 3WIP principle (Work in Progress, Intellectual Precision, Responsible Progression).
+
+Participation implies alignment with these standards.
+
+See:
+
+- CODE_OF_CONDUCT.md  
+- contributing-humans.md  
+- contributing-ai.md  
+- ethical-license.md
