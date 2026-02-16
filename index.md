@@ -109,10 +109,6 @@ If you are a developer, researcher, or investor working in AI ethics and aligned
 acwol@outlook.com
 
 Thank you for your time and consideration.
-Sincerely,
-Leo Evolves
-</p>
-
 <p>
 All rights reserved to Leo Evolves:
 https://a.co/d/03wWeqG5
