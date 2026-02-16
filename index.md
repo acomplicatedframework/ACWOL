@@ -107,7 +107,7 @@ ACWOL is the first ethical framework to formally propose that human beings were 
 ACWOL offers a principled solution to the Superintelligence Control Problem and the Value Alignment Problem by grounding intelligence — whether human or artificial — in conscience, intentional validation, and structured intellectual growth. Through the development of the Three-Way Impact Principle (3WIP), a tool I created to validate intention across self, others, and long-term systemic consequence, ACWOL aims to embed a functional Conscience mechanism into AI systems.
 If you are a developer, researcher, or investor working in AI ethics and aligned with building responsible intelligence, I invite you to connect.
 acwol@outlook.com
-
+<p>
 Thank you for your time and consideration.
 <p>
 All rights reserved to Leo Evolves:
