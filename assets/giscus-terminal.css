@@ -9,6 +9,8 @@
 
   --color-fg-default: #00ff00;
   --color-fg-muted: #00ff00;
+  --color-fg-subtle: #00ff00;
+  --color-fg-on-emphasis: #00ff00;
   --color-accent-fg: #00ff00;
 
   --color-btn-bg: #000000;
@@ -23,4 +25,27 @@
   --color-input-border: #00ff00;
 
   --color-focus-border: #00ff00;
+}
+
+/* FORCE EVERYTHING TERMINAL STYLE */
+
+.giscus,
+.giscus * {
+  color: #00ff00 !important;
+  border-color: #00ff00 !important;
+}
+
+/* Input + textarea fix */
+textarea,
+input {
+  background: #000000 !important;
+  color: #00ff00 !important;
+  border: 1px solid #00ff00 !important;
+}
+
+/* Buttons */
+button {
+  background: #000000 !important;
+  color: #00ff00 !important;
+  border: 1px solid #00ff00 !important;
 }
