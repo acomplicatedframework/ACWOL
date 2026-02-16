@@ -1,25 +1,48 @@
 :root {
-  /* Background */
+
+  /* =========================
+     BACKGROUND
+  ========================== */
+
   --color-canvas-default: #000000;
   --color-canvas-overlay: #000000;
 
-  /* Borders */
+  /* =========================
+     BORDERS
+  ========================== */
+
   --color-border-default: #00ff00;
   --color-border-muted: #00ff00;
   --color-neutral-muted: #001a00;
 
-  /* Text */
+  /* =========================
+     TEXT
+  ========================== */
+
   --color-fg-default: #00ff00;
   --color-fg-muted: #00ff00;
   --color-fg-subtle: #00ff00;
   --color-fg-on-emphasis: #00ff00;
   --color-accent-fg: #00ff00;
 
-  /* Links */
+  /* Fix faded comment text */
+  --color-scale-gray-7: #00ff00;
+  --color-scale-gray-6: #00ff00;
+  --color-scale-gray-5: #00ff00;
+  --color-scale-gray-4: #00cc00;
+  --color-scale-gray-3: #009900;
+
+  /* =========================
+     LINKS
+  ========================== */
+
   --color-accent-emphasis: #00ff00;
   --color-accent-muted: #003300;
 
-  /* Buttons */
+  /* =========================
+     BUTTONS
+  ========================== */
+
   --color-btn-bg: #000000;
   --color-btn-border: #00ff00;
   --color-btn-text: #00ff00;
@@ -28,15 +51,59 @@
   --color-btn-primary-border: #00ff00;
   --color-btn-primary-text: #00ff00;
 
-  /* Inputs */
+  /* =========================
+     INPUTS
+  ========================== */
+
   --color-input-bg: #000000;
   --color-input-border: #00ff00;
 
-  /* Focus */
+  /* =========================
+     FOCUS STATES
+  ========================== */
+
   --color-focus-border: #00ff00;
 
-  /* NEW — this fixes faded comment text */
-  --color-scale-gray-7: #00ff00;
-  --color-scale-gray-6: #00ff00;
-  --color-scale-gray-5: #00ff00;
+}
+
+/* =========================================
+   FORCE TERMINAL LOOK (OVERRIDES)
+========================================= */
+
+.giscus,
+.giscus * {
+  color: #00ff00 !important;
+  border-color: #00ff00 !important;
+  font-family: "Courier New", monospace !important;
+}
+
+/* Textarea + input fields */
+
+textarea,
+input {
+  background: #000000 !important;
+  color: #00ff00 !important;
+  border: 1px solid #00ff00 !important;
+}
+
+/* Buttons */
+
+button {
+  background: #000000 !important;
+  color: #00ff00 !important;
+  border: 1px solid #00ff00 !important;
+}
+
+/* Primary button slightly darker green */
+
+button.btn-primary {
+  background: #003300 !important;
+}
+
+/* Hover effect */
+
+button:hover,
+textarea:focus,
+input:focus {
+  box-shadow: 0 0 8px #00ff00 !important;
 }
