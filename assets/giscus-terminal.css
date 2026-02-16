@@ -1,17 +1,26 @@
-<script src="https://giscus.app/client.js"
-        data-repo="acomplicatedframework/ACWOL"
-        data-repo-id="R_kgDORKNoSg"
-        data-category="General"
-        data-category-id="DIC_kwDORKNoSs4C2i0z"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="preferred_color_scheme"
-        data-theme-url="https://acomplicatedframework.github.io/ACWOL/assets/giscus-terminal.css"
-        data-lang="en"
-        data-loading="lazy"
-        crossorigin="anonymous"
-        async>
-</script>
+:root {
+  --color-canvas-default: #000000;
+  --color-canvas-overlay: #000000;
+
+  --color-border-default: #00ff00;
+  --color-border-muted: #00ff00;
+
+  --color-neutral-muted: #001a00;
+
+  --color-fg-default: #00ff00;
+  --color-fg-muted: #00ff00;
+  --color-accent-fg: #00ff00;
+
+  --color-btn-bg: #000000;
+  --color-btn-border: #00ff00;
+  --color-btn-text: #00ff00;
+
+  --color-btn-primary-bg: #003300;
+  --color-btn-primary-border: #00ff00;
+  --color-btn-primary-text: #00ff00;
+
+  --color-input-bg: #000000;
+  --color-input-border: #00ff00;
+
+  --color-focus-border: #00ff00;
+}
