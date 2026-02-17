@@ -53,6 +53,7 @@ body::before {
   letter-spacing: 3px;
   margin-top: 80px;
   margin-bottom: 30px;
+  color: #8A2BE2;
 }
 
 /* ===================================== */
@@ -62,7 +63,7 @@ body::before {
 
 .ai-section .section-header,
 a.ai-section .section-header {
-  animation: aiFlicker 0.6s steps(1) infinite !important;
+  animation: aiFlicker 0.6s linear infinite !important;
 }
 
 @keyframes aiFlicker {
@@ -91,13 +92,6 @@ a.ni-section .section-header {
 /* ===================================== */
 /* FORCE SECTION HEADERS TO CONTROL COLOR */
 /* ===================================== */
-
-.ai-section .section-header,
-a.ai-section .section-header,
-.ni-section .section-header,
-a.ni-section .section-header {
-
-}
 
 hr {
   border: none;
