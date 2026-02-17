@@ -161,10 +161,9 @@ li {
 <div class="acwol-header">ACWOL</div>
 
 <p>
-Originally developed in 2009, ACWOL is the core framework for conscience-led decision-making, disciplined Intellect mining, and human–AI co-evolution.
-ACWOL is the first ethical framework to formally propose that human beings were created to mine Intellect.
-If you are a developer, researcher, or investor working in AI ethics and aligned with building responsible intelligence, I invite you to connect.
-acwol@outlook.com
+Originally developed in 2009, ACWOL is the core framework for conscience-led decision-making, disciplined Intellect mining, and human–AI co-evolution.  
+ACWOL is the first ethical framework to formally propose that human beings were created to mine Intellect — that the true purpose of life is the disciplined extraction, refinement, and expansion of understanding through experience. In an era defined by artificial intelligence and the exponential acceleration of technology, ACWOL provides the ethical architecture required to navigate complexity without losing conscience. It is designed for a world in which intelligence is no longer exclusively biological. ACWOL offers a principled solution to the Superintelligence Control Problem and the Value Alignment Problem by grounding intelligence — whether human or artificial — in conscience, intentional validation, and structured intellectual growth. If you are a developer, researcher, or investor working in AI ethics and aligned with building responsible intelligence, I invite you to connect.  
+acwol@outlook.com  
 </p>
 
 <p>Thank you for your time and consideration.</p>
