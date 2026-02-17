@@ -140,4 +140,14 @@ button:focus {
   outline: none !important;
   border: 1px solid #00ff00 !important;
   box-shadow: none !important;
+  
+}/* DEFAULT LINK COLOR (NOT SECTION HEADERS) */
+
+a:not(.ai-section):not(.ni-section) {
+  color: #00ff00 !important;
+  text-decoration: none;
+}
+
+a:not(.ai-section):not(.ni-section):hover {
+  text-decoration: underline;
 }
