@@ -14,18 +14,12 @@
       color: #00ff00;
       font-family: "Courier New", monospace;
       margin: 0;
-      padding: 60px 40px;
-      opacity: 0;
-      animation: fadeIn 1.5s ease forwards;
+      padding: 60px 20px;
       position: relative;
       overflow-x: hidden;
     }
 
-    @keyframes fadeIn {
-      to { opacity: 1; }
-    }
-
-    /* CRT Scanlines */
+    /* CRT scanlines */
     body::before {
       content: "";
       position: fixed;
@@ -47,69 +41,66 @@
     .content-wrapper {
       position: relative;
       z-index: 1;
-      max-width: 1000px;
+      max-width: 900px;
+      margin: auto;
     }
 
     h1.hero {
-      font-size: 95px;
-      font-weight: bold;
-      text-shadow:
-        0 0 10px #00ff00,
-        0 0 20px #00ff00,
-        0 0 40px #00ff00,
-        0 0 80px #00ff00;
+      font-size: 80px;
       margin-bottom: 40px;
     }
 
     h2 {
-      font-size: 40px;
-      margin-top: 70px;
-      text-shadow: 0 0 10px #00ff00;
-    }
-
-    h3 {
-      margin-top: 40px;
-      font-size: 24px;
+      font-size: 32px;
+      margin-top: 60px;
     }
 
     p {
       font-size: 18px;
       line-height: 1.8;
-      max-width: 900px;
     }
 
     hr {
       border: none;
       border-top: 1px solid #00ff00;
-      margin: 80px 0;
+      margin: 60px 0;
     }
 
     /* ============================= */
-    /* TERMINAL DISCUSSION SECTION   */
+    /* SYSTEM DISCUSSION SECTION */
     /* ============================= */
 
-    .terminal-heading {
+    .discussion-section {
+      margin-top: 120px;
+    }
+
+    .discussion-title {
       font-family: 'Press Start 2P', cursive;
+      color: #bb00ff;
       font-size: 28px;
-      margin-top: 100px;
       margin-bottom: 50px;
-      color: #a020f0;
-      text-shadow:
-        0 0 8px #a020f0,
-        0 0 16px #a020f0,
-        0 0 32px #a020f0;
+      line-height: 1.6;
     }
 
-    .terminal-heading::before {
-      content: "> ";
+    .terminal-box {
+      border: 2px solid #00ff00;
+      padding: 40px 20px;
     }
 
-    .terminal-discussion {
-      border: 1px solid #00ff00;
-      padding: 35px;
-      background-color: #000000;
-      box-shadow: 0 0 20px rgba(0,255,0,0.3);
-      margin-bottom: 120px;
+    /* Remove forced height issue */
+    .giscus {
+      width: 100%;
+    }
+
+    /* Improve visibility inside cards */
+    .giscus .markdown-body {
+      background: #000000 !important;
+      color: #00ff00 !important;
+    }
+
+    /* Improve buttons */
+    .giscus button {
+      border-radius: 0 !important;
     }
 
   </style>
@@ -119,33 +110,33 @@
   <div class="content-wrapper">
     {{ content }}
 
-    <hr>
+    <div class="discussion-section">
+      <div class="discussion-title">
+        &gt; SYSTEM<br>
+        DISCUSSION<br>
+        LOG
+      </div>
 
-    <h2 class="terminal-heading">SYSTEM_DISCUSSION_LOG</h2>
-
-    <div class="terminal-discussion">
-      <div class="giscus"></div>
+      <div class="terminal-box">
+        <script src="https://giscus.app/client.js"
+                data-repo="acomplicatedframework/ACWOL"
+                data-repo-id="R_kgDORKNoSg"
+                data-category="General"
+                data-category-id="DIC_kwDORKNoSs4C2i0z"
+                data-mapping="pathname"
+                data-strict="0"
+                data-reactions-enabled="1"
+                data-emit-metadata="0"
+                data-input-position="bottom"
+                data-theme="custom"
+                data-theme-url="https://acomplicatedframework.github.io/ACWOL/assets/giscus-terminal.css"
+                data-lang="en"
+                crossorigin="anonymous"
+                async>
+        </script>
+      </div>
     </div>
 
   </div>
-
-  <!-- GISCUS SCRIPT (MUST BE BEFORE </body>) -->
-  <script src="https://giscus.app/client.js"
-          data-repo="acomplicatedframework/ACWOL"
-          data-repo-id="R_kgDORKNoSg"
-          data-category="General"
-          data-category-id="DIC_kwDORKNoSs4C2i0z"
-          data-mapping="pathname"
-          data-strict="0"
-          data-reactions-enabled="1"
-          data-emit-metadata="0"
-          data-input-position="bottom"
-          data-theme="custom"
-          data-theme-url="https://acomplicatedframework.github.io/ACWOL/assets/giscus-terminal.css?v=9"
-          data-lang="en"
-          crossorigin="anonymous"
-          async>
-  </script>
-
 </body>
 </html>
