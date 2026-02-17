@@ -2,6 +2,7 @@
 layout: default
 title: ACWOL
 ---
+
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
@@ -47,7 +48,6 @@ body::before {
   margin-bottom: 60px;
 }
 
-/* Base Section Header */
 .section-header {
   font-family: 'Press Start 2P', monospace;
   font-size: 26px;
@@ -57,16 +57,15 @@ body::before {
   color: #8A2BE2; /* Base violet */
 }
 
-/* Remove default underline on section links */
+/* Remove link underline for section headers */
 a.ai-main,
-a.ni-main {
+a.ni-main,
+a.violet-section {
   text-decoration: none;
   display: block;
 }
 
-/* ========================= */
-/* AI MAIN FLICKER (VIOLET ↔ PINK) */
-/* ========================= */
+/* ================= AI FLICKER ================= */
 
 a.ai-main .section-header {
   animation: aiMainFlicker 0.8s steps(1) infinite;
@@ -78,9 +77,7 @@ a.ai-main .section-header {
   100% { color: #8A2BE2; }
 }
 
-/* ========================= */
-/* NI MAIN FLICKER (CYAN ↔ AMBER) */
-/* ========================= */
+/* ================= NI FLICKER ================= */
 
 a.ni-main .section-header {
   animation: niMainFlicker 0.9s steps(1) infinite;
@@ -92,7 +89,7 @@ a.ni-main .section-header {
   100% { color: #00ffff; }
 }
 
-/* ========================= */
+/* ================= Base Elements ================= */
 
 hr {
   border: none;
@@ -122,9 +119,6 @@ li {
   margin-bottom: 18px;
   font-size: 18px;
 }
-
-</style>
-
 </style>
 /* ============================= */
 /* ETH ADDRESS FIX               */
