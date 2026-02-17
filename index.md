@@ -53,6 +53,16 @@ body::before {
   letter-spacing: 3px;
   margin-top: 80px;
   margin-bottom: 30px;
+  color: #8A2BE2;
+}
+
+.arcade-quote {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 34px;
+  color: #ff00ff;
+  text-align: center;
+  margin: 60px 0;
+  letter-spacing: 4px;
 }
 
 .violet-section {
@@ -291,5 +301,6 @@ Widespread adoption of ACWOL would therefore not merely improve personal develop
 
 <div class="signature-separator"></div>
 
+<div class="arcade-quote">
+  "INTELLECT IS THE ONLY TRUE ESCAPE."
 </div>
-
