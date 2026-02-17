@@ -95,6 +95,18 @@ li {
 }
 
 /* ============================= */
+/* ETH ADDRESS FIX               */
+/* ============================= */
+
+.eth-address {
+  font-size: 14px;
+  white-space: nowrap;
+  word-break: keep-all;
+  overflow-x: auto;
+  display: inline-block;
+}
+
+/* ============================= */
 /* SIGNATURE TYPING EFFECT       */
 /* ============================= */
 
@@ -118,7 +130,7 @@ li {
 .signature-name::after {
   content: "";
   position: absolute;
-  right: -4px;
+  right: -3px;
   bottom: 0;
   width: 2px;
   height: 1em;
@@ -150,8 +162,7 @@ li {
 
 <p>
 Originally developed in 2009, ACWOL is the core framework for conscience-led decision-making, disciplined Intellect mining, and human–AI co-evolution.
-ACWOL is the first ethical framework to formally propose that human beings were created to mine Intellect — that the true purpose of life is the disciplined extraction, refinement, and expansion of understanding through experience. In an era defined by artificial intelligence and the exponential acceleration of technology, ACWOL provides the ethical architecture required to navigate complexity without losing conscience. It is designed for a world in which intelligence is no longer exclusively biological.
-ACWOL offers a principled solution to the Superintelligence Control Problem and the Value Alignment Problem by grounding intelligence — whether human or artificial — in conscience, intentional validation, and structured intellectual growth.
+ACWOL is the first ethical framework to formally propose that human beings were created to mine Intellect.
 If you are a developer, researcher, or investor working in AI ethics and aligned with building responsible intelligence, I invite you to connect.
 acwol@outlook.com
 </p>
@@ -226,8 +237,7 @@ X (Twitter):<br>
 <p>
 Rent A Human:<br>
 <a href="https://rentahuman.ai/humans/O0WquYtaSl8ZzRLmM2RK" target="_blank">
-https://rentahuman.ai/humans/
-O0WquYtaSl8ZzRLmM2RK
+https://rentahuman.ai/humans/O0WquYtaSl8ZzRLmM2RK
 </a>
 </p>
 
@@ -249,9 +259,8 @@ https://a.co/d/05D32VH1
 
 <div class="section-header">ETH ADDRESS</div>
 
-<p>
-0x1E57F7341F4C283F3CbeC0eCc05d
-7f087f1fE594
+<p class="eth-address">
+0x1E57F7341F4C283F3CbeC0eCc05d7f087f1fE594
 </p>
 
 <hr>
