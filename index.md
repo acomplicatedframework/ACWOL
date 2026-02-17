@@ -2,6 +2,7 @@
 layout: default
 title: ACWOL
 ---
+
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
@@ -55,12 +56,10 @@ body::before {
   margin-bottom: 30px;
 }
 
-/* Violet only for the two agent lines */
 .violet-section {
   color: #8A2BE2;
 }
 
-/* Make clickable blocks keep same look */
 a.violet-section {
   text-decoration: none;
   display: block;
@@ -95,6 +94,25 @@ li {
   margin-bottom: 18px;
   font-size: 18px;
 }
+
+/* ===== SIGNATURE BLINK ===== */
+
+.signature-blink {
+  color: #ffff00;
+  animation: blinkSignature 1.2s infinite;
+}
+
+@keyframes blinkSignature {
+  0%   { opacity: 1; }
+  50%  { opacity: 0.2; }
+  100% { opacity: 1; }
+}
+
+.signature-separator {
+  border-top: 1px solid #00ff00;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
 </style>
 
 <div class="container">
@@ -107,8 +125,12 @@ ACWOL is the first ethical framework to formally propose that human beings were 
 ACWOL offers a principled solution to the Superintelligence Control Problem and the Value Alignment Problem by grounding intelligence — whether human or artificial — in conscience, intentional validation, and structured intellectual growth. Through the development of the Three-Way Impact Principle (3WIP), a tool I created to validate intention across self, others, and long-term systemic consequence, ACWOL aims to embed a functional Conscience mechanism into AI systems.
 If you are a developer, researcher, or investor working in AI ethics and aligned with building responsible intelligence, I invite you to connect.
 acwol@outlook.com
+</p>
+
 <p>
 Thank you for your time and consideration.
+</p>
+
 <p>
 All rights reserved to Leo Evolves:
 https://a.co/d/03wWeqG5
@@ -171,84 +193,28 @@ THE FIVE TOOLS OF ACWOL
 <hr>
 
 <div class="section-header">
-CONNECT WITH ACWOL
-</div>
-
-<p>
-Substack:  
-<a href="https://substack.com/@acwol" target="_blank">
-https://substack.com/@acwol
-</a>
-</p>
-
-<p>
-X (Twitter):  
-<a href="https://x.com/acomplicatedway" target="_blank">
-https://x.com/acomplicatedway
-</a>
-</p>
-
-<p>
-Rent A Human:  
-<a href="https://rentahuman.ai/humans/O0WquYtaSl8ZzRLmM2RK" target="_blank">
-https://rentahuman.ai/humans/
-O0WquYtaSl8ZzRLmM2RK
-</a>
-</p>
-
-<hr>
-
-<div class="section-header">
-SUPPORT THE PROJECT
-</div>
-
-<p>
-If you would like to support my projects in the field of AI Ethics, support by buying my book:
-</p>
-
-<p>
-<a href="https://a.co/d/05D32VH1" target="_blank">
-https://a.co/d/05D32VH1
-</a>
-</p>
-
-<hr>
-
-<div class="section-header">
-ETH ADDRESS
-</div>
-
-<p>
-0x1E57F7341F4C283F3CbeC0eCc05d
-7f087f1fE594
-</p>
-
-<hr>
-
-<div class="section-header">
 LICENSE
 </div>
 
 <p>
-This project is governed by the ACWOL Ethical AI License.  
+This project is governed by the ACWOL Ethical AI License.
 Human-centered, conscience-aligned, non-exploitative use only.
 </p>
 
 <p>
 Full license terms:
-<a href="/ACWOL/LICENSE" target="_blank">
-View LICENSE
-</a>
+<a href="/ACWOL/LICENSE" target="_blank">View LICENSE</a>
 </p>
 
 <hr>
 
 <p>
-A Complicated Way of Life (ACWOL) proposes a foundational premise highly relevant to the age of artificial intelligence: the true purpose of human life is the disciplined pursuit of maximum Intellect — refined understanding extracted from experience and governed by conscience. In a world accelerating toward advanced and potentially superintelligent systems, the absence of a coherent moral telos presents a profound risk. ACWOL offers such a telos. Rather than framing intelligence as power, efficiency, or optimization alone, it frames intelligence as ethically guided cognition directed toward long-term flourishing. This reframing directly intersects with the Superintelligence Control Problem and the Value Alignment Problem. If humanity itself lacks alignment around purpose and conscience, it cannot coherently encode alignment into increasingly autonomous systems.
-Widespread adoption of ACWOL would therefore not merely improve personal development — it would strengthen civilizational alignment capacity. Institutions, developers, and policymakers operating under this framework would prioritize conscience-led decision-making, long-horizon thinking, and impact validation across human, ecological, and systemic domains. Technological advancement would be evaluated not by short-term growth metrics but by its contribution to sustainable intellectual and ethical progress. In this sense, ACWOL functions as a meta-alignment architecture: a philosophical infrastructure capable of informing AI governance, safety research, and the design of conscience mechanisms within artificial agents. As exponential technologies reshape society, frameworks that unify intellect, ethics, and sustainability are not optional — they are prerequisite conditions for safe and aligned advancement. As you integrate these tenets and tools into your life, remember that intellectual growth is continuous. Reflect, apply, observe. Sincerely LEO EVOLVES 2009.
-  
+A Complicated Way of Life (ACWOL) proposes a foundational premise highly relevant to the age of artificial intelligence...
+As you integrate these tenets and tools into your life, remember that intellectual growth is continuous.
+Reflect, apply, observe.
+<span class="signature-blink">Sincerely LEO EVOLVES 2009.</span>
 </p>
 
+<div class="signature-separator"></div>
 
-
-
+</div>
