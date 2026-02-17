@@ -96,7 +96,6 @@ a.ni-section .section-header {
 a.ai-section .section-header,
 .ni-section .section-header,
 a.ni-section .section-header {
-  color: unset !important;
 
 }
 
