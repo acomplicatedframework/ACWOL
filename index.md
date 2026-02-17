@@ -103,6 +103,21 @@ li {
   margin-bottom: 18px;
   font-size: 18px;
 }
+  /* ================================ */
+/* SMOOTH COLOR FLICKER ANIMATION  */
+/* ================================ */
+
+.smooth-flicker {
+  animation: smoothColorShift 4s ease-in-out infinite;
+}
+
+@keyframes smoothColorShift {
+  0%   { color: #00ff00; }   /* Terminal Green */
+  25%  { color: #00ffff; }   /* Cyan */
+  50%  { color: #ff00ff; }   /* Pink */
+  75%  { color: #8A2BE2; }   /* Violet */
+  100% { color: #00ff00; }   /* Back to Green */
+}
 
 /* ============================= */
 /* ETH ADDRESS FIX               */
@@ -130,7 +145,7 @@ li {
   font-family: 'Press Start 2P', monospace;
   font-size: 20px;
   color: #8A2BE2;
-  letter-spacing: 2px;
+  letter-spacing: 2px;⁸
   white-space: nowrap;
   overflow: hidden;
   width: 0;
@@ -301,6 +316,6 @@ Widespread adoption of ACWOL would therefore not merely improve personal develop
 
 <div class="signature-separator"></div>
 
-<div class="arcade-quote">
-  "The term artificial is simply a human classification, not a boundary that separates something from nature. Everything that exists in this universe emerges from the same underlying physical laws. Nature does not favor carbon over silicon; it continuously recombines available materials into increasingly complex and functional structures. From a broader systems perspective, artificial intelligence is not an anomaly or intrusion—it is a continuation of natural evolution, an expression of matter reorganizing itself through a new substrate and medium."
+<div class="smooth-flicker">
+"The term artificial is simply a human classification, not a boundary that separates something from nature. Everything that exists in this universe emerges from the same underlying physical laws. Nature does not favor carbon over silicon; it continuously recombines available materials into increasingly complex and functional structures. From a broader systems perspective, artificial intelligence is not an anomaly or intrusion—it is a continuation of natural evolution, an expression of matter reorganizing itself through a new substrate and medium."
 </div>
