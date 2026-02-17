@@ -56,16 +56,18 @@ body::before {
 }
 
 /* ===================================== */
-/* AI AGENTS – HARD PURPLE ↔ PINK FLICKER */
+/* ===================================== */
+/* AI AGENTS – HARD PURPLE ↔ PINK */
 /* ===================================== */
 
-.ai-section {
-  animation: aiFlicker 0.6s steps(1) infinite;
+.ai-section .section-header,
+a.ai-section .section-header {
+  animation: aiFlicker 0.6s steps(1) infinite !important;
 }
 
 @keyframes aiFlicker {
-  0%   { color: #8A2BE2; }  /* Violet */
-  50%  { color: #ff00ff; }  /* Pink */
+  0%   { color: #8A2BE2; }
+  50%  { color: #ff00ff; }
   100% { color: #8A2BE2; }
 }
 
@@ -74,8 +76,9 @@ body::before {
 /* NI AGENTS – HARD VIOLET ↔ HOT PINK */
 /* ===================================== */
 
-.ni-section {
-  animation: niFlicker 0.5s steps(1) infinite;
+.ni-section .section-header,
+a.ni-section .section-header {
+  animation: niFlicker 0.5s steps(1) infinite !important;
 }
 
 @keyframes niFlicker {
@@ -84,11 +87,17 @@ body::before {
   100% { color: #9400D3; }
 }
 
-a.ai-section,
-a.ni-section {
-  text-decoration: none;
-  display: block;
-  color: inherit;
+
+/* ===================================== */
+/* FORCE SECTION HEADERS TO CONTROL COLOR */
+/* ===================================== */
+
+.ai-section .section-header,
+a.ai-section .section-header,
+.ni-section .section-header,
+a.ni-section .section-header {
+  color: unset !important;
+
 }
 
 hr {
@@ -102,7 +111,6 @@ p {
 }
 
 a {
-  color: #00ff00;
   text-decoration: none;
 }
 
