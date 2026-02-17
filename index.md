@@ -58,7 +58,7 @@ body::before {
 
 .arcade-quote {
   font-family: 'Press Start 2P', monospace;
-  font-size: 34px;
+  font-size: 14px;
   color: #ff00ff;
   text-align: center;
   margin: 60px 0;
