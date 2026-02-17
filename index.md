@@ -55,20 +55,31 @@ body::before {
   margin-bottom: 30px;
 }
 
+/* ===================================== */
+/* BLINKING PURPLE ↔ PINK TERMINAL TITLE */
+/* ===================================== */
+
 .violet-section {
-  color: #8A2BE2;
+  animation: purplePinkBlink 1.2s infinite;
+}
+
+@keyframes purplePinkBlink {
+  0%   { color: #8A2BE2; }
+  50%  { color: #ff00ff; }
+  100% { color: #8A2BE2; }
 }
 
 a.violet-section {
   text-decoration: none;
   display: block;
-  color: #8A2BE2;
+  color: inherit;
 }
 
 hr {
   border: none;
   border-top: 1px solid #00ff00;
   margin: 60px 0;
+}
 }
 
 p {
