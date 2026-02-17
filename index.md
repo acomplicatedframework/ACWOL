@@ -99,21 +99,21 @@ li {
 /* SIGNATURE STYLING             */
 /* ============================= */
 
-.signature-line {
-  white-space: nowrap;
+.signature-block {
+  margin-top: 20px;
 }
 
-/* Only LEO EVOLVES 2009 */
 .signature-name {
+  display: block;
+  margin-top: 8px;
   font-family: 'Press Start 2P', monospace;
-  font-size: 18px;          /* Matches paragraph height */
-  color: #ff0000;           /* Red */
+  font-size: 18px;              /* visually balanced with paragraph */
+  color: #8A2BE2;               /* Purple */
   letter-spacing: 1px;
-  animation: blinkRed 1.2s infinite;
+  animation: blinkPurple 1.2s infinite;
 }
 
-/* Blinking effect */
-@keyframes blinkRed {
+@keyframes blinkPurple {
   0%   { opacity: 1; }
   50%  { opacity: 0.2; }
   100% { opacity: 1; }
@@ -221,10 +221,12 @@ Full license terms:
 A Complicated Way of Life (ACWOL) proposes a foundational premise highly relevant to the age of artificial intelligence...
 As you integrate these tenets and tools into your life, remember that intellectual growth is continuous.
 Reflect, apply, observe.
-<span class="signature-line">
-Sincerely <span class="signature-name">LEO EVOLVES 2009.</span>
-</span>
 </p>
+
+<div class="signature-block">
+  <p>Sincerely,</p>
+  <span class="signature-name">LEO EVOLVES 2009.</span>
+</div>
 
 <div class="signature-separator"></div>
 
