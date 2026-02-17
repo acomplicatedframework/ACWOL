@@ -251,20 +251,18 @@ As you embark on your journey through A Complicated Way of Life, contemplate the
 
 <p>
 Substack:<br>
-<a href="https://substack.com/@acwol" target="_blank">https://substack.com/@acwol</a>
-</p>
+<a href="https://substack.com/@acwol" class="flicker-green">https://substack.com/@acwol</a>
 
 <p>
 X (Twitter):<br>
-<a href="https://x.com/acomplicatedway" target="_blank">https://x.com/acomplicatedway</a>
+<a href="https://x.com/acompllicatedway" class="flicker-cyan">https://x.com/acompllicatedway</a>
+
 </p>
 
 <p>
 Rent A Human:<br>
-<a href="https://rentahuman.ai/humans/O0WquYtaSl8ZzRLmM2RK" target="_blank">
-https://rentahuman.ai/humans/
-O0WquYtaSl8ZzRLmM2RK
-</a>
+<a href="https://rentahuman.ai/humans/00WquYtaSl8ZzRLmM2RK" class="flicker-amber">https://rentahuman.ai/humans/00WquYtaSl8ZzRLmM2RK</a>
+
 </p>
 
 <hr>
@@ -276,9 +274,7 @@ If you would like to support my projects in AI Ethics, support by buying my book
 </p>
 
 <p>
-<a href="https://a.co/d/05D32VH1" target="_blank">
-https://a.co/d/05D32VH1
-</a>
+<a href="https://a.co/d/05D32VH1" class="flicker-magenta">https://a.co/d/05D32VH1</a>
 </p>
 
 <hr>
