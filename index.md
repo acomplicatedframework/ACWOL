@@ -110,7 +110,9 @@ li {
   letter-spacing: 2px;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 3px solid #8A2BE2;
+
+  /* Smaller cursor */
+  border-right: 2px solid #8A2BE2;
 
   width: 0;
   animation:
