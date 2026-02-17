@@ -31,16 +31,22 @@
   --color-accent-fg: #00ff00;
   --color-accent-emphasis: #00ff00;
 
+  /* Accent backgrounds */
+  --color-accent-muted: #001a00;
+  --color-accent-subtle: #001a00;
+  --color-neutral-muted: #001a00;
+
   /* Fix faded gray text */
   --color-scale-gray-7: #00ff00;
   --color-scale-gray-6: #00ff00;
   --color-scale-gray-5: #00ff00;
 }
 
-/* FORCE TERMINAL LOOK */
+/* FORCE TERMINAL FONT */
 .giscus,
 .giscus * {
   font-family: "Courier New", monospace !important;
+  border-radius: 0 !important;
 }
 
 /* Textareas + inputs */
@@ -61,6 +67,11 @@ button {
 /* Primary button darker */
 button.btn-primary {
   background: #003300 !important;
+}
+
+/* Active reaction pill */
+.giscus button[aria-pressed="true"] {
+  background: #001a00 !important;
 }
 
 /* Hover glow */
