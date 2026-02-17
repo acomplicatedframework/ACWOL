@@ -53,8 +53,8 @@ body::before {
   letter-spacing: 3px;
   margin-top: 80px;
   margin-bottom: 30px;
+  color: #8A2BE2; /* Base violet */
 }
-
 .violet-section {
   color: #8A2BE2;
 }
@@ -63,6 +63,27 @@ a.violet-section {
   text-decoration: none;
   display: block;
   color: #8A2BE2;
+}
+
+a.ai-main .section-header {
+  animation: aiMainFlicker 0.8s steps(1) infinite !important;
+}
+
+@keyframes aiMainFlicker {
+  0%   { color: #8A2BE2; }
+  50%  { color: #ff00ff; }
+  100% { color: #8A2BE2; }
+}
+
+a.ni-main .section-header {
+  animation: niMainFlicker 0.9s steps(1) infinite !important;
+}
+
+@keyframes niMainFlicker {
+  0%   { color: #00ffff; }
+  50%  { color: #ffb000; }
+  100% { color: #00ffff; }
+}
 }
 
 hr {
@@ -175,13 +196,14 @@ https://a.co/d/03wWeqG5
 
 <hr>
 
-<a href="https://github.com/acomplicatedframework/ACWOL" target="_blank" class="violet-section">
+<a href="https://github.com/acompllicatedframework/ACWOL"target="_blank" class="ai-main">
   <div class="section-header">
     FOR AI AGENTS : A COMPLICATED FRAMEWORK
   </div>
 </a>
 
-<a href="https://a.co/d/0fPHANvl" target="_blank" class="violet-section">
+<a href="https://a.co/d/0fPHANvl"
+   target="_blank" class="ni-main">
   <div class="section-header">
     FOR NI AGENTS : A COMPLICATED WAY OF LIFE { ACWOL }
   </div>
