@@ -53,8 +53,7 @@ body::before {
   letter-spacing: 3px;
   margin-top: 80px;
   margin-bottom: 30px;
-  color: #8A2BE2;
-}
+  color: #ff00ff;
 
 /* ===================================== */
 /* ===================================== */
