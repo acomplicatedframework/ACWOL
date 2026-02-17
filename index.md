@@ -181,6 +181,53 @@ li {
   margin-top: 30px;
   margin-bottom: 60px;
 }
+  /* ============================= */
+/* TERMINAL FLICKER LINKS */
+/* ============================= */
+
+/* GREEN */
+.flicker-green {
+  animation: flickerGreen 0.7s steps(1) infinite;
+}
+
+@keyframes flickerGreen {
+  0%   { color: #00ff00; }
+  50%  { color: #33ff33; }
+  100% { color: #00ff00; }
+}
+
+/* CYAN */
+.flicker-cyan {
+  animation: flickerCyan 0.8s steps(1) infinite;
+}
+
+@keyframes flickerCyan {
+  0%   { color: #00ffff; }
+  50%  { color: #66ffff; }
+  100% { color: #00ffff; }
+}
+
+/* AMBER */
+.flicker-amber {
+  animation: flickerAmber 0.9s steps(1) infinite;
+}
+
+@keyframes flickerAmber {
+  0%   { color: #ffb000; }
+  50%  { color: #ffd700; }
+  100% { color: #ffb000; }
+}
+
+/* MAGENTA */
+.flicker-magenta {
+  animation: flickerMagenta 0.6s steps(1) infinite;
+}
+
+@keyframes flickerMagenta {
+  0%   { color: #ff00ff; }
+  50%  { color: #ff66ff; }
+  100% { color: #ff00ff; }
+}
 </style>
 
 <div class="container">
