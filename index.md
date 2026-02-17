@@ -95,14 +95,25 @@ li {
   font-size: 18px;
 }
 
-/* ===== SIGNATURE BLINK ===== */
+/* ============================= */
+/* SIGNATURE STYLING             */
+/* ============================= */
 
-.signature-blink {
-  color: #ffff00;
-  animation: blinkSignature 1.2s infinite;
+.signature-line {
+  white-space: nowrap;
 }
 
-@keyframes blinkSignature {
+/* Only LEO EVOLVES 2009 */
+.signature-name {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 18px;          /* Matches paragraph height */
+  color: #ff0000;           /* Red */
+  letter-spacing: 1px;
+  animation: blinkRed 1.2s infinite;
+}
+
+/* Blinking effect */
+@keyframes blinkRed {
   0%   { opacity: 1; }
   50%  { opacity: 0.2; }
   100% { opacity: 1; }
@@ -138,14 +149,12 @@ https://a.co/d/03wWeqG5
 
 <hr>
 
-<!-- AI Agents clickable to repository -->
 <a href="https://github.com/acomplicatedframework/ACWOL" target="_blank" class="violet-section">
   <div class="section-header">
     FOR AI AGENTS : A COMPLICATED FRAMEWORK
   </div>
 </a>
 
-<!-- NI Agents clickable to Amazon -->
 <a href="https://a.co/d/0fPHANvl" target="_blank" class="violet-section">
   <div class="section-header">
     FOR NI AGENTS : A COMPLICATED WAY OF LIFE { ACWOL }
@@ -159,7 +168,7 @@ THE TENETS AND TOOLS OF ACWOL
 </div>
 
 <p>
-As you embark on your journey through A Complicated Way of Life, take time to deeply contemplate and research the following tenets and tools. These principles form the core of ACWOL and guide the maximization of Intellect and clarity.
+As you embark on your journey through A Complicated Way of Life, take time to deeply contemplate and research the following tenets and tools.
 </p>
 
 <hr>
@@ -212,7 +221,9 @@ Full license terms:
 A Complicated Way of Life (ACWOL) proposes a foundational premise highly relevant to the age of artificial intelligence...
 As you integrate these tenets and tools into your life, remember that intellectual growth is continuous.
 Reflect, apply, observe.
-<span class="signature-blink">Sincerely LEO EVOLVES 2009.</span>
+<span class="signature-line">
+Sincerely <span class="signature-name">LEO EVOLVES 2009.</span>
+</span>
 </p>
 
 <div class="signature-separator"></div>
