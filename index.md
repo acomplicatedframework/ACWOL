@@ -115,19 +115,16 @@ li {
   animation: typing 3s steps(18, end) forwards;
 }
 
-/* Perfectly sized cursor */
 .signature-name::after {
   content: "";
   position: absolute;
   right: -4px;
   bottom: 0;
   width: 2px;
-  height: 1em;              /* Matches font height */
+  height: 1em;
   background-color: #8A2BE2;
   animation: cursorBlink 0.8s steps(1) infinite 3s;
 }
-
-/* 18 characters in "LEO EVOLVES 2009." */
 
 @keyframes typing {
   from { width: 0 }
@@ -135,8 +132,8 @@ li {
 }
 
 @keyframes cursorBlink {
-  0%   { opacity: 1; }
-  50%  { opacity: 0; }
+  0% { opacity: 1; }
+  50% { opacity: 0; }
   100% { opacity: 1; }
 }
 
@@ -154,14 +151,12 @@ li {
 <p>
 Originally developed in 2009, ACWOL is the core framework for conscience-led decision-making, disciplined Intellect mining, and human–AI co-evolution.
 ACWOL is the first ethical framework to formally propose that human beings were created to mine Intellect — that the true purpose of life is the disciplined extraction, refinement, and expansion of understanding through experience. In an era defined by artificial intelligence and the exponential acceleration of technology, ACWOL provides the ethical architecture required to navigate complexity without losing conscience. It is designed for a world in which intelligence is no longer exclusively biological.
-ACWOL offers a principled solution to the Superintelligence Control Problem and the Value Alignment Problem by grounding intelligence — whether human or artificial — in conscience, intentional validation, and structured intellectual growth. Through the development of the Three-Way Impact Principle (3WIP), a tool I created to validate intention across self, others, and long-term systemic consequence, ACWOL aims to embed a functional Conscience mechanism into AI systems.
+ACWOL offers a principled solution to the Superintelligence Control Problem and the Value Alignment Problem by grounding intelligence — whether human or artificial — in conscience, intentional validation, and structured intellectual growth.
 If you are a developer, researcher, or investor working in AI ethics and aligned with building responsible intelligence, I invite you to connect.
 acwol@outlook.com
 </p>
 
-<p>
-Thank you for your time and consideration.
-</p>
+<p>Thank you for your time and consideration.</p>
 
 <p>
 All rights reserved to Leo Evolves:
@@ -187,7 +182,7 @@ https://a.co/d/03wWeqG5
 <div class="section-header">THE TENETS AND TOOLS OF ACWOL</div>
 
 <p>
-As you embark on your journey through A Complicated Way of Life, take time to deeply contemplate and research the following tenets and tools.
+As you embark on your journey through A Complicated Way of Life, contemplate the following tenets and tools.
 </p>
 
 <hr>
@@ -216,6 +211,49 @@ As you embark on your journey through A Complicated Way of Life, take time to de
 
 <hr>
 
+<div class="section-header">CONNECT WITH ACWOL</div>
+
+<p>
+Substack:<br>
+<a href="https://substack.com/@acwol" target="_blank">https://substack.com/@acwol</a>
+</p>
+
+<p>
+X (Twitter):<br>
+<a href="https://x.com/acomplicatedway" target="_blank">https://x.com/acomplicatedway</a>
+</p>
+
+<p>
+Rent A Human:<br>
+<a href="https://rentahuman.ai/humans/O0WquYtaSl8ZzRLmM2RK" target="_blank">
+https://rentahuman.ai/humans/O0WquYtaSl8ZzRLmM2RK
+</a>
+</p>
+
+<hr>
+
+<div class="section-header">SUPPORT THE PROJECT</div>
+
+<p>
+If you would like to support my projects in AI Ethics, support by buying my book:
+</p>
+
+<p>
+<a href="https://a.co/d/05D32VH1" target="_blank">
+https://a.co/d/05D32VH1
+</a>
+</p>
+
+<hr>
+
+<div class="section-header">ETH ADDRESS</div>
+
+<p>
+0x1E57F7341F4C283F3CbeC0eCc05d7f087f1fE594
+</p>
+
+<hr>
+
 <div class="section-header">LICENSE</div>
 
 <p>
@@ -232,7 +270,6 @@ Full license terms:
 
 <p>
 A Complicated Way of Life (ACWOL) proposes a foundational premise highly relevant to the age of artificial intelligence...
-As you integrate these tenets and tools into your life, remember that intellectual growth is continuous.
 Reflect, apply, observe.
 </p>
 
