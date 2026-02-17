@@ -53,44 +53,17 @@ body::before {
   letter-spacing: 3px;
   margin-top: 80px;
   margin-bottom: 30px;
-  color: inherit;
-
-/* ===================================== */
-/* ===================================== */
-/* AI AGENTS – HARD PURPLE ↔ PINK */
-/* ===================================== */
-
-.ai-section .section-header,
-a.ai-section .section-header {
-  animation: aiFlicker 0.6s linear infinite !important;
 }
 
-@keyframes aiFlicker {
-  0%   { color: #8A2BE2; }
-  50%  { color: #ff00ff; }
-  100% { color: #8A2BE2; }
+.violet-section {
+  color: #8A2BE2;
 }
 
-
-/* ===================================== */
-/* NI AGENTS – HARD VIOLET ↔ HOT PINK */
-/* ===================================== */
-
-.ni-section .section-header,
-a.ni-section .section-header {
-  animation: niFlicker 0.5s steps(1) infinite !important;
+a.violet-section {
+  text-decoration: none;
+  display: block;
+  color: #8A2BE2;
 }
-
-@keyframes niFlicker {
-  0%   { color: #9400D3; }
-  50%  { color: #ff1493; }
-  100% { color: #9400D3; }
-}
-
-
-/* ===================================== */
-/* FORCE SECTION HEADERS TO CONTROL COLOR */
-/* ===================================== */
 
 hr {
   border: none;
@@ -103,6 +76,7 @@ p {
 }
 
 a {
+  color: #00ff00;
   text-decoration: none;
 }
 
@@ -180,53 +154,6 @@ li {
   margin-top: 30px;
   margin-bottom: 60px;
 }
-  /* ============================= */
-/* TERMINAL FLICKER LINKS */
-/* ============================= */
-
-/* GREEN */
-.flicker-green {
-  animation: flickerGreen 0.7s steps(1) infinite;
-}
-
-@keyframes flickerGreen {
-  0%   { color: #00ff00; }
-  50%  { color: #33ff33; }
-  100% { color: #00ff00; }
-}
-
-/* CYAN */
-.flicker-cyan {
-  animation: flickerCyan 0.8s steps(1) infinite;
-}
-
-@keyframes flickerCyan {
-  0%   { color: #00ffff; }
-  50%  { color: #66ffff; }
-  100% { color: #00ffff; }
-}
-
-/* AMBER */
-.flicker-amber {
-  animation: flickerAmber 0.9s steps(1) infinite;
-}
-
-@keyframes flickerAmber {
-  0%   { color: #ffb000; }
-  50%  { color: #ffd700; }
-  100% { color: #ffb000; }
-}
-
-/* MAGENTA */
-.flicker-magenta {
-  animation: flickerMagenta 0.6s steps(1) infinite;
-}
-
-@keyframes flickerMagenta {
-  0%   { color: #ff00ff; }
-  50%  { color: #ff66ff; }
-  100% { color: #ff00ff; }
-}
 </style>
 
 <div class="container">
@@ -247,13 +174,14 @@ https://a.co/d/03wWeqG5
 </p>
 
 <hr>
-<a href="https://github.com/acomplicatedframework/ACWOL" target="_blank" class="ai-section">
+
+<a href="https://github.com/acomplicatedframework/ACWOL" target="_blank" class="violet-section">
   <div class="section-header">
     FOR AI AGENTS : A COMPLICATED FRAMEWORK
   </div>
 </a>
 
-<a href="https://a.co/d/0fPHANvl" target="_blank" class="ni-section">
+<a href="https://a.co/d/0fPHANvl" target="_blank" class="violet-section">
   <div class="section-header">
     FOR NI AGENTS : A COMPLICATED WAY OF LIFE { ACWOL }
   </div>
@@ -297,18 +225,20 @@ As you embark on your journey through A Complicated Way of Life, contemplate the
 
 <p>
 Substack:<br>
-<a href="https://substack.com/@acwol" class="flicker-green">https://substack.com/@acwol</a>
+<a href="https://substack.com/@acwol" target="_blank">https://substack.com/@acwol</a>
+</p>
 
 <p>
 X (Twitter):<br>
-<a href="https://x.com/acompllicatedway" class="flicker-cyan">https://x.com/acompllicatedway</a>
-
+<a href="https://x.com/acomplicatedway" target="_blank">https://x.com/acomplicatedway</a>
 </p>
 
 <p>
 Rent A Human:<br>
-<a href="https://rentahuman.ai/humans/00WquYtaSl8ZzRLmM2RK" class="flicker-amber">https://rentahuman.ai/humans/00WquYtaSl8ZzRLmM2RK</a>
-
+<a href="https://rentahuman.ai/humans/O0WquYtaSl8ZzRLmM2RK" target="_blank">
+https://rentahuman.ai/humans/
+O0WquYtaSl8ZzRLmM2RK
+</a>
 </p>
 
 <hr>
@@ -320,7 +250,9 @@ If you would like to support my projects in AI Ethics, support by buying my book
 </p>
 
 <p>
-<a href="https://a.co/d/05D32VH1" class="flicker-magenta">https://a.co/d/05D32VH1</a>
+<a href="https://a.co/d/05D32VH1" target="_blank">
+https://a.co/d/05D32VH1
+</a>
 </p>
 
 <hr>
@@ -354,9 +286,10 @@ Widespread adoption of ACWOL would therefore not merely improve personal develop
 
 <div class="signature-block">
   <p>Sincerely,</p>
-  <span class="signature-name">LEO EVOLVES 2009 ©</span>
+  <span class="signature-name">LEO EVOLVES 2009.</span>
 </div>
 
 <div class="signature-separator"></div>
 
 </div>
+
