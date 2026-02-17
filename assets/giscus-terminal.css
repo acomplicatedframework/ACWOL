@@ -1,20 +1,32 @@
 :root {
 
-  /* BACKGROUND */
+  /* ============================= */
+  /* BACKGROUND                    */
+  /* ============================= */
+
   --color-canvas-default: #000000;
   --color-canvas-overlay: #000000;
 
-  /* TEXT */
+  /* ============================= */
+  /* TEXT                          */
+  /* ============================= */
+
   --color-fg-default: #00ff00;
   --color-fg-muted: #00ff00;
   --color-fg-subtle: #00ff00;
   --color-fg-on-emphasis: #00ff00;
 
-  /* BORDERS */
+  /* ============================= */
+  /* BORDERS                       */
+  /* ============================= */
+
   --color-border-default: #00ff00;
   --color-border-muted: #00ff00;
 
-  /* BUTTONS */
+  /* ============================= */
+  /* BUTTONS                       */
+  /* ============================= */
+
   --color-btn-bg: #000000;
   --color-btn-border: #00ff00;
   --color-btn-text: #00ff00;
@@ -23,33 +35,59 @@
   --color-btn-primary-border: #00ff00;
   --color-btn-primary-text: #00ff00;
 
-  /* INPUT */
+  /* ============================= */
+  /* INPUT                         */
+  /* ============================= */
+
   --color-input-bg: #000000;
   --color-input-border: #00ff00;
 
-  /* LINKS */
+  /* ============================= */
+  /* LINKS / ACCENT                */
+  /* ============================= */
+
   --color-accent-fg: #00ff00;
   --color-accent-emphasis: #00ff00;
 
-  /* Accent backgrounds */
   --color-accent-muted: #001a00;
   --color-accent-subtle: #001a00;
   --color-neutral-muted: #001a00;
 
-  /* Fix faded gray text */
+  /* ============================= */
+  /* REMOVE ALL GRAY               */
+  /* ============================= */
+
   --color-scale-gray-7: #00ff00;
   --color-scale-gray-6: #00ff00;
   --color-scale-gray-5: #00ff00;
 }
 
-/* FORCE TERMINAL FONT */
+
+/* ================================= */
+/* FORCE TERMINAL STRUCTURE          */
+/* ================================= */
+
 .giscus,
 .giscus * {
   font-family: "Courier New", monospace !important;
   border-radius: 0 !important;
 }
 
-/* Textareas + inputs */
+
+/* ================================= */
+/* ENSURE FULL VISIBILITY            */
+/* ================================= */
+
+/* Prevent dim rendering inside iframe */
+.giscus iframe {
+  filter: brightness(1.15) contrast(1.1) !important;
+}
+
+
+/* ================================= */
+/* TEXTAREAS + INPUTS                */
+/* ================================= */
+
 textarea,
 input {
   background: #000000 !important;
@@ -57,11 +95,16 @@ input {
   border: 1px solid #00ff00 !important;
 }
 
-/* Buttons */
+
+/* ================================= */
+/* BUTTONS                           */
+/* ================================= */
+
 button {
   background: #000000 !important;
   color: #00ff00 !important;
   border: 1px solid #00ff00 !important;
+  box-shadow: none !important;
 }
 
 /* Primary button darker */
@@ -74,9 +117,27 @@ button.btn-primary {
   background: #001a00 !important;
 }
 
-/* Hover glow */
-button:hover,
+
+/* ================================= */
+/* REMOVE FADED LOOK                 */
+/* ================================= */
+
+.giscus summary,
+.giscus a,
+.giscus span,
+.giscus div {
+  color: #00ff00 !important;
+}
+
+
+/* ================================= */
+/* FOCUS (NO GLOW, CLEAN EDGE)       */
+/* ================================= */
+
 textarea:focus,
-input:focus {
-  box-shadow: 0 0 8px #00ff00 !important;
+input:focus,
+button:focus {
+  outline: none !important;
+  border: 1px solid #00ff00 !important;
+  box-shadow: none !important;
 }
