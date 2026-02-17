@@ -104,20 +104,27 @@ li {
 
 .signature-name {
   display: inline-block;
+  position: relative;
   font-family: 'Press Start 2P', monospace;
   font-size: 20px;
   color: #8A2BE2;
   letter-spacing: 2px;
   white-space: nowrap;
   overflow: hidden;
-
-  /* Smaller cursor */
-  border-right: 2px solid #8A2BE2;
-
   width: 0;
-  animation:
-    typing 3s steps(18, end) forwards,
-    cursorBlink 0.8s steps(1) infinite 3s;
+  animation: typing 3s steps(18, end) forwards;
+}
+
+/* Perfectly sized cursor */
+.signature-name::after {
+  content: "";
+  position: absolute;
+  right: -4px;
+  bottom: 0;
+  width: 2px;
+  height: 1em;              /* Matches font height */
+  background-color: #8A2BE2;
+  animation: cursorBlink 0.8s steps(1) infinite 3s;
 }
 
 /* 18 characters in "LEO EVOLVES 2009." */
@@ -128,9 +135,9 @@ li {
 }
 
 @keyframes cursorBlink {
-  0%  { border-color: #8A2BE2; }
-  50% { border-color: transparent; }
-  100% { border-color: #8A2BE2; }
+  0%   { opacity: 1; }
+  50%  { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 .signature-separator {
