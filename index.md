@@ -72,7 +72,7 @@ body::before {
 a.violet-section {
   text-decoration: none;
   display: block;
-  color: #8A2BE2;
+  color: #FF52A0;
 }
 
 hr {
