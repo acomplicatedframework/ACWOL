@@ -56,20 +56,36 @@ body::before {
 }
 
 /* ===================================== */
-/* BLINKING PURPLE ↔ PINK TERMINAL TITLE */
+/* AI AGENTS – HARD PURPLE ↔ PINK FLICKER */
 /* ===================================== */
 
-.violet-section {
-  animation: purplePinkBlink 1.2s infinite;
+.ai-section {
+  animation: aiFlicker 0.6s steps(1) infinite;
 }
 
-@keyframes purplePinkBlink {
-  0%   { color: #8A2BE2; }
-  50%  { color: #ff00ff; }
+@keyframes aiFlicker {
+  0%   { color: #8A2BE2; }  /* Violet */
+  50%  { color: #ff00ff; }  /* Pink */
   100% { color: #8A2BE2; }
 }
 
-a.violet-section {
+
+/* ===================================== */
+/* NI AGENTS – HARD VIOLET ↔ HOT PINK */
+/* ===================================== */
+
+.ni-section {
+  animation: niFlicker 0.5s steps(1) infinite;
+}
+
+@keyframes niFlicker {
+  0%   { color: #9400D3; }
+  50%  { color: #ff1493; }
+  100% { color: #9400D3; }
+}
+
+a.ai-section,
+a.ni-section {
   text-decoration: none;
   display: block;
   color: inherit;
@@ -79,7 +95,6 @@ hr {
   border: none;
   border-top: 1px solid #00ff00;
   margin: 60px 0;
-}
 }
 
 p {
