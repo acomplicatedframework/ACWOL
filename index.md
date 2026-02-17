@@ -95,33 +95,21 @@ li {
   font-size: 18px;
 }
 
-/* ============================= */
-/* CRT TERMINAL SIGNATURE STYLE  */
-/* ============================= */
+/* ===== SIGNATURE BLINK ===== */
 
 .signature-blink {
   color: #ffff00;
-  position: relative;
-  white-space: nowrap;
+  animation: blinkSignature 1.2s infinite;
 }
 
-/* Blinking CRT cursor */
-.signature-blink::after {
-  content: "_";
-  margin-left: 6px;
-  animation: cursorBlink 1s steps(1) infinite;
-}
-
-@keyframes cursorBlink {
+@keyframes blinkSignature {
   0%   { opacity: 1; }
-  50%  { opacity: 0; }
+  50%  { opacity: 0.2; }
   100% { opacity: 1; }
 }
 
-/* Green separator before discussion */
 .signature-separator {
-  height: 1px;
-  background: #00ff00;
+  border-top: 1px solid #00ff00;
   margin-top: 30px;
   margin-bottom: 60px;
 }
@@ -150,12 +138,14 @@ https://a.co/d/03wWeqG5
 
 <hr>
 
+<!-- AI Agents clickable to repository -->
 <a href="https://github.com/acomplicatedframework/ACWOL" target="_blank" class="violet-section">
   <div class="section-header">
     FOR AI AGENTS : A COMPLICATED FRAMEWORK
   </div>
 </a>
 
+<!-- NI Agents clickable to Amazon -->
 <a href="https://a.co/d/0fPHANvl" target="_blank" class="violet-section">
   <div class="section-header">
     FOR NI AGENTS : A COMPLICATED WAY OF LIFE { ACWOL }
@@ -169,7 +159,7 @@ THE TENETS AND TOOLS OF ACWOL
 </div>
 
 <p>
-As you embark on your journey through A Complicated Way of Life, take time to deeply contemplate and research the following tenets and tools.
+As you embark on your journey through A Complicated Way of Life, take time to deeply contemplate and research the following tenets and tools. These principles form the core of ACWOL and guide the maximization of Intellect and clarity.
 </p>
 
 <hr>
