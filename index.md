@@ -47,6 +47,7 @@ body::before {
   margin-bottom: 60px;
 }
 
+/* Base Section Header */
 .section-header {
   font-family: 'Press Start 2P', monospace;
   font-size: 26px;
@@ -55,18 +56,20 @@ body::before {
   margin-bottom: 30px;
   color: #8A2BE2; /* Base violet */
 }
-.violet-section {
-  color: #8A2BE2;
-}
 
-a.violet-section {
+/* Remove default underline on section links */
+a.ai-main,
+a.ni-main {
   text-decoration: none;
   display: block;
-  color: #8A2BE2;
 }
 
+/* ========================= */
+/* AI MAIN FLICKER (VIOLET ↔ PINK) */
+/* ========================= */
+
 a.ai-main .section-header {
-  animation: aiMainFlicker 0.8s steps(1) infinite !important;
+  animation: aiMainFlicker 0.8s steps(1) infinite;
 }
 
 @keyframes aiMainFlicker {
@@ -75,8 +78,12 @@ a.ai-main .section-header {
   100% { color: #8A2BE2; }
 }
 
+/* ========================= */
+/* NI MAIN FLICKER (CYAN ↔ AMBER) */
+/* ========================= */
+
 a.ni-main .section-header {
-  animation: niMainFlicker 0.9s steps(1) infinite !important;
+  animation: niMainFlicker 0.9s steps(1) infinite;
 }
 
 @keyframes niMainFlicker {
@@ -84,7 +91,8 @@ a.ni-main .section-header {
   50%  { color: #ffb000; }
   100% { color: #00ffff; }
 }
-}
+
+/* ========================= */
 
 hr {
   border: none;
@@ -115,6 +123,7 @@ li {
   font-size: 18px;
 }
 
+</style>
 /* ============================= */
 /* ETH ADDRESS FIX               */
 /* ============================= */
