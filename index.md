@@ -200,14 +200,13 @@ https://a.co/d/03wWeqG5
 </p>
 
 <hr>
-
-<a href="https://github.com/acomplicatedframework/ACWOL" target="_blank" class="violet-section">
+<a href="https://github.com/acomplicatedframework/ACWOL" target="_blank" class="ai-section">
   <div class="section-header">
     FOR AI AGENTS : A COMPLICATED FRAMEWORK
   </div>
 </a>
 
-<a href="https://a.co/d/0fPHANvl" target="_blank" class="violet-section">
+<a href="https://a.co/d/0fPHANvl" target="_blank" class="ni-section">
   <div class="section-header">
     FOR NI AGENTS : A COMPLICATED WAY OF LIFE { ACWOL }
   </div>
