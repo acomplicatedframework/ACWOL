@@ -286,7 +286,7 @@ Widespread adoption of ACWOL would therefore not merely improve personal develop
 
 <div class="signature-block">
   <p>Sincerely,</p>
-  <span class="signature-name">LEO EVOLVES 2009.</span>
+  <span class="signature-name">LEO EVOLVES 2009 ©</span>
 </div>
 
 <div class="signature-separator"></div>
