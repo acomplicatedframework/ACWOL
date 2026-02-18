@@ -181,21 +181,23 @@ li {
 }
   /* ================================= */
 /* AI + NI SMOOTH RAINBOW SHIFT     */
+/* (NO GLOW VERSION)                */
 /* ================================= */
 
 .ai-link .section-header,
 .ni-link .section-header {
   animation: rainbowShift 8s linear infinite;
+  text-shadow: none; /* Force remove any glow */
 }
 
 @keyframes rainbowShift {
-  0%   { color: #ff0000; text-shadow: 0 0 8px #ff0000; }   /* Red */
-  16%  { color: #ff7f00; text-shadow: 0 0 8px #ff7f00; }   /* Orange */
-  32%  { color: #ffff00; text-shadow: 0 0 8px #ffff00; }   /* Yellow */
-  48%  { color: #00ff00; text-shadow: 0 0 8px #00ff00; }   /* Green */
-  64%  { color: #0000ff; text-shadow: 0 0 8px #0000ff; }   /* Blue */
-  80%  { color: #4b0082; text-shadow: 0 0 8px #4b0082; }   /* Indigo */
-  100% { color: #ff0000; text-shadow: 0 0 8px #ff0000; }   /* Back to Red */
+  0%   { color: #ff0000; }   /* Red */
+  16%  { color: #ff7f00; }   /* Orange */
+  32%  { color: #ffff00; }   /* Yellow */
+  48%  { color: #00ff00; }   /* Green */
+  64%  { color: #0000ff; }   /* Blue */
+  80%  { color: #4b0082; }   /* Indigo */
+  100% { color: #ff0000; }   /* Back to Red */
 }
 </style>
 
