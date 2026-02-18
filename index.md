@@ -184,15 +184,15 @@ li {
 /* ================================= */
 
 .ai-link .section-header {
-  animation: aiHardFlicker 1.2s steps(1) infinite;
+  animation: aiHardFlicker 0.7s steps(1) infinite;
 }
 
 @keyframes aiHardFlicker {
-  0%   { color: #8A2BE2; text-shadow: 0 0 5px #8A2BE2; }   /* Violet */
-  25%  { color: #ff00ff; text-shadow: 0 0 15px #ff00ff; }  /* Hot Pink */
-  50%  { color: #00ffff; text-shadow: 0 0 15px #00ffff; }  /* Cyan */
-  75%  { color: #ffffff; text-shadow: 0 0 20px #ffffff; }  /* White Flash */
-  100% { color: #8A2BE2; text-shadow: 0 0 5px #8A2BE2; }
+  0%   { color: #8A2BE2; text-shadow: 0 0 6px #8A2BE2; }   /* Violet */
+  25%  { color: #ff00ff; text-shadow: 0 0 18px #ff00ff; }  /* Hot Pink */
+  50%  { color: #C71585; text-shadow: 0 0 18px #C71585; }  /* Deep Pink */
+  75%  { color: #9400D3; text-shadow: 0 0 20px #9400D3; }  /* Dark Purple */
+  100% { color: #8A2BE2; text-shadow: 0 0 6px #8A2BE2; }
 }
 
 
@@ -201,9 +201,16 @@ li {
 /* ================================= */
 
 .ni-link .section-header {
-  animation: niHardFlicker 1.4s steps(1) infinite;
+  animation: niHardFlicker 0.7s steps(1) infinite;
 }
 
+@keyframes niHardFlicker {
+  0%   { color: #ff1493; text-shadow: 0 0 8px #ff1493; }   /* Neon Pink */
+  25%  { color: #DB7093; text-shadow: 0 0 16px #DB7093; }  /* Pale Violet Red */
+  50%  { color: #BA55D3; text-shadow: 0 0 18px #BA55D3; }  /* Medium Orchid */
+  75%  { color: #800080; text-shadow: 0 0 22px #800080; }  /* Pure Purple */
+  100% { color: #ff1493; text-shadow: 0 0 8px #ff1493; }
+}
 @keyframes niHardFlicker {
   0%   { color: #00ffff; text-shadow: 0 0 5px #00ffff; }   /* Cyan */
   25%  { color: #00ff88; text-shadow: 0 0 15px #00ff88; }  /* Neon Green */
