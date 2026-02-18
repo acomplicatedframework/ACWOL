@@ -180,31 +180,35 @@ li {
   margin-bottom: 60px;
 }
   /* ================================= */
-/* AI SECTION TERMINAL EFFECT        */
+/* AI SECTION HARD TERMINAL FLICKER */
 /* ================================= */
 
 .ai-link .section-header {
-  animation: aiGlow 3s ease-in-out infinite;
+  animation: aiHardFlicker 1.2s steps(1) infinite;
 }
 
-@keyframes aiGlow {
-  0%   { color: #8A2BE2; text-shadow: 0 0 5px #8A2BE2; }
-  50%  { color: #ff00ff; text-shadow: 0 0 20px #ff00ff; }
+@keyframes aiHardFlicker {
+  0%   { color: #8A2BE2; text-shadow: 0 0 5px #8A2BE2; }   /* Violet */
+  25%  { color: #ff00ff; text-shadow: 0 0 15px #ff00ff; }  /* Hot Pink */
+  50%  { color: #00ffff; text-shadow: 0 0 15px #00ffff; }  /* Cyan */
+  75%  { color: #ffffff; text-shadow: 0 0 20px #ffffff; }  /* White Flash */
   100% { color: #8A2BE2; text-shadow: 0 0 5px #8A2BE2; }
 }
 
 
 /* ================================= */
-/* NI SECTION TERMINAL EFFECT        */
+/* NI SECTION HARD TERMINAL FLICKER */
 /* ================================= */
 
 .ni-link .section-header {
-  animation: niGlow 3.5s ease-in-out infinite;
+  animation: niHardFlicker 1.4s steps(1) infinite;
 }
 
-@keyframes niGlow {
-  0%   { color: #00ffff; text-shadow: 0 0 5px #00ffff; }
-  50%  { color: #00ff88; text-shadow: 0 0 20px #00ff88; }
+@keyframes niHardFlicker {
+  0%   { color: #00ffff; text-shadow: 0 0 5px #00ffff; }   /* Cyan */
+  25%  { color: #00ff88; text-shadow: 0 0 15px #00ff88; }  /* Neon Green */
+  50%  { color: #ffb000; text-shadow: 0 0 15px #ffb000; }  /* Amber */
+  75%  { color: #ffffff; text-shadow: 0 0 20px #ffffff; }  /* White Flash */
   100% { color: #00ffff; text-shadow: 0 0 5px #00ffff; }
 }
 </style>
