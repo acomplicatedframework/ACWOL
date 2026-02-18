@@ -193,13 +193,11 @@ li {
 }
 
 @keyframes rainbowShift {
-  0%   { color: #ff0000; }   /* Red */
-  16%  { color: #ff7f00; }   /* Orange */
-  32%  { color: #ffff00; }   /* Yellow */
-  48%  { color: #00ff00; }   /* Green */
+  0%   { color: #DD7BDF; }   /* Purple */
+  16%  { color: #FF52A0; }   /* Pink */
   64%  { color: #0000ff; }   /* Blue */
-  80%  { color: #4b0082; }   /* Indigo */
-  100% { color: #ff0000; }   /* Back to Red */
+  80%  { color: #BBCB2E; }   /* Green */
+  100% { color: #DD7BDF; }   /* Back to Purple */
 }
 </style>
 
