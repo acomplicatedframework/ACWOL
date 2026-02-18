@@ -108,7 +108,7 @@ li {
 /* ================================ */
 
 .smooth-flicker {
-  font-size: 16px;   /* Increase this number */
+  font-size: 19px;   /* Increase this number */
   line-height: 1.9;  /* Optional: improves spacing */
   animation: smoothColorShift 4s ease-in-out infinite;
 }
