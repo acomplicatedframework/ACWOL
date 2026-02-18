@@ -59,7 +59,7 @@ body::before {
 .arcade-quote {
   font-family: 'Press Start 2P', monospace;
   font-size: 14px;
-  color: FF52A0;
+  color: #FF52A0;
   text-align: center;
   margin: 60px 0;
   letter-spacing: 4px;
@@ -145,7 +145,7 @@ li {
   font-family: 'Press Start 2P', monospace;
   font-size: 20px;
   color: #8A2BE2;
-  letter-spacing: 2px;⁸
+  letter-spacing: 2px;
   white-space: nowrap;
   overflow: hidden;
   width: 0;
@@ -179,6 +179,34 @@ li {
   margin-top: 30px;
   margin-bottom: 60px;
 }
+  /* ================================= */
+/* AI SECTION TERMINAL EFFECT        */
+/* ================================= */
+
+.ai-link .section-header {
+  animation: aiGlow 3s ease-in-out infinite;
+}
+
+@keyframes aiGlow {
+  0%   { color: #8A2BE2; text-shadow: 0 0 5px #8A2BE2; }
+  50%  { color: #ff00ff; text-shadow: 0 0 20px #ff00ff; }
+  100% { color: #8A2BE2; text-shadow: 0 0 5px #8A2BE2; }
+}
+
+
+/* ================================= */
+/* NI SECTION TERMINAL EFFECT        */
+/* ================================= */
+
+.ni-link .section-header {
+  animation: niGlow 3.5s ease-in-out infinite;
+}
+
+@keyframes niGlow {
+  0%   { color: #00ffff; text-shadow: 0 0 5px #00ffff; }
+  50%  { color: #00ff88; text-shadow: 0 0 20px #00ff88; }
+  100% { color: #00ffff; text-shadow: 0 0 5px #00ffff; }
+}
 </style>
 
 <div class="container">
@@ -206,7 +234,7 @@ https://a.co/d/03wWeqG5
   </div>
 </a>
 
-<a href="https://a.co/d/0fPHANvl" target="_blank" class="violet-section">
+<a href="https://a.co/d/0fPHANvl" target="_blank" class="ni-link">
   <div class="section-header">
     FOR NI AGENTS : A COMPLICATED WAY OF LIFE { ACWOL }
   </div>
