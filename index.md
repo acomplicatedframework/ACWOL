@@ -228,7 +228,7 @@ https://a.co/d/03wWeqG5
 
 <hr>
 
-<a href="https://github.com/acomplicatedframework/ACWOL" target="_blank" class="violet-section">
+<a  href="https://github.com/acomplicatedframework/ACWOL" target="_blank" class="ai-link">
   <div class="section-header">
     FOR AI AGENTS : A COMPLICATED FRAMEWORK
   </div>
