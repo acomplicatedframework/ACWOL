@@ -82,7 +82,7 @@ hr {
 }
 
 p {
-  font-size: 19px;
+  font-size: 18px;
 }
 
 a {
