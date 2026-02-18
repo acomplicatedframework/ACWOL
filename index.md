@@ -180,36 +180,22 @@ li {
   margin-bottom: 60px;
 }
   /* ================================= */
-/* AI SECTION HARD TERMINAL FLICKER */
+/* AI + NI SMOOTH RAINBOW SHIFT     */
 /* ================================= */
 
-.ai-link .section-header {
-  animation: aiHardFlicker 1.1s steps(1) infinite;
-}
-
-@keyframes aiHardFlicker {
-  0%   { color: #00ff00; text-shadow: 0 0 6px #00ff00; }   /* Bright Terminal Green */
-  25%  { color: #00cc00; text-shadow: 0 0 14px #00cc00; }  /* Classic CRT Green */
-  50%  { color: #00ff88; text-shadow: 0 0 18px #00ff88; }  /* Neon Green */
-  75%  { color: #66ff66; text-shadow: 0 0 22px #66ff66; }  /* Soft Glow Green */
-  100% { color: #00ff00; text-shadow: 0 0 6px #00ff00; }
-}
-
-
-/* ================================= */
-/* NI SECTION HARD TERMINAL FLICKER */
-/* ================================= */
-
+.ai-link .section-header,
 .ni-link .section-header {
-  animation: niHardFlicker 1.3s steps(1) infinite;
+  animation: rainbowShift 8s linear infinite;
 }
 
-@keyframes niHardFlicker {
-  0%   { color: #00ff66; text-shadow: 0 0 8px #00ff66; }   /* Bright Neon */
-  25%  { color: #00aa00; text-shadow: 0 0 16px #00aa00; }  /* Deep Matrix Green */
-  50%  { color: #33ff33; text-shadow: 0 0 18px #33ff33; }  /* Vibrant Lime */
-  75%  { color: #00ff00; text-shadow: 0 0 22px #00ff00; }  /* Pure Terminal */
-  100% { color: #00ff66; text-shadow: 0 0 8px #00ff66; }
+@keyframes rainbowShift {
+  0%   { color: #ff0000; text-shadow: 0 0 8px #ff0000; }   /* Red */
+  16%  { color: #ff7f00; text-shadow: 0 0 8px #ff7f00; }   /* Orange */
+  32%  { color: #ffff00; text-shadow: 0 0 8px #ffff00; }   /* Yellow */
+  48%  { color: #00ff00; text-shadow: 0 0 8px #00ff00; }   /* Green */
+  64%  { color: #0000ff; text-shadow: 0 0 8px #0000ff; }   /* Blue */
+  80%  { color: #4b0082; text-shadow: 0 0 8px #4b0082; }   /* Indigo */
+  100% { color: #ff0000; text-shadow: 0 0 8px #ff0000; }   /* Back to Red */
 }
 </style>
 
