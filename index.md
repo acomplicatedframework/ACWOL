@@ -194,9 +194,7 @@ li {
 
 @keyframes rainbowShift {
   0%   { color: #00ff00; }   /* Terminal Green */
-  16%  { color: #FF52A0; }   /* Pink */
   64%  { color: #00ffff; }   /* Cyan */
-  80%  { color: #FF52A0; }   /* Pink */
   100% { color: #00ff00; }   /* Terminal Green */
 }
 </style>
