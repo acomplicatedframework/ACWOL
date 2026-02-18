@@ -195,7 +195,7 @@ li {
 @keyframes rainbowShift {
   0%   { color: #DD7BDF; }   /* Purple */
   16%  { color: #FF52A0; }   /* Pink */
-  64%  { color: #ABE0F0; }   /* Blue */
+  64%  { color: #00ffff; }   /* Cyan */
   80%  { color: #FF52A0; }   /* Pink */
   100% { color: #DD7BDF; }   /* Back to Purple */
 }
