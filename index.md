@@ -146,7 +146,7 @@ li {
   position: relative;
   font-family: 'Press Start 2P', monospace;
   font-size: 20px;
-  color: #8A2BE2;
+  color: #F5F2F2;
   letter-spacing: 2px;
   white-space: nowrap;
   overflow: hidden;
