@@ -53,7 +53,7 @@ body::before {
   letter-spacing: 3px;
   margin-top: 80px;
   margin-bottom: 30px;
-  color: #48A111;
+  color: #00ff00;
 }
 
 .arcade-quote {
